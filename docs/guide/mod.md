@@ -32,7 +32,7 @@ https://www.mcmod.cn/class/1869.html
 
 #### 另请参阅
 
-[服务器 Mod 列表/BBOR 自然生成建筑结构显示](https://masterlazy.github.io/TwoThreeBlocks-Wiki/docs/mods/bbor)
+[服务器 Mod 列表/BBOR 自然生成建筑结构显示](https://masterlazy.github.io/TwoThreeBlocks-Wiki/docs/mod/bbor)
 
 ### Tweakeroo
 
