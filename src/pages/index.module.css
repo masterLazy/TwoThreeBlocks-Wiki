@@ -3,16 +3,6 @@
  * and scoped locally.
  */
 
-@font-face {
-  font-family: 'SourceHanSans';
-  src: url('/font/SourceHanSansSC.woff2');
-}
-
-@font-face {
-  font-family: 'MonaBold';
-  src: url('/font/Mona-Bold.woff2');
-}
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;

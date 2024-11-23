@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'SourceHanSans';
-    src: url('/font/SourceHanSansSC.woff2');
+    src: url('https://ttbl.ocks.top/font/SourceHanSansSC.woff2');
 }
 
 @font-face {
     font-family: 'MonaBold';
-    src: url('/font/Mona-Bold.woff2');
+    src: url('https://ttbl.ocks.top/font/Mona-Bold.woff2');
 }
 
 html {
