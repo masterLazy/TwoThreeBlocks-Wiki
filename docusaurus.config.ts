@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-    title: 'TwoThreeBlocks Wiki',
-    tagline: '二三方块 Minecraft 服务器官方 Wiki',
+    title: 'TwoThreeBlocks',
+    tagline: '二三方块 Minecraft 服务器',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -92,11 +92,7 @@ const config: Config = {
                         {
                             label: '加入服务器',
                             to: '/docs/guide/alpha'
-                        },
-                        {
-                            label: '赞助我们',
-                            to: '/docs/donate'
-                        },
+                        }
                     ],
                 },
                 {
@@ -116,8 +112,6 @@ const config: Config = {
             darkTheme: prismThemes.dracula,
         },
     } satisfies Preset.ThemeConfig,
-
-    onBrokenLinks: 'ignore'
 };
 
 export default config;
