@@ -50,7 +50,7 @@ const config: Config = {
     themeConfig: {
         // Replace with your project's social card
         navbar: {
-            title: 'TwoThreeBlocks Wiki',
+            title: 'TwoThreeBlocks',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/ttb.svg',
