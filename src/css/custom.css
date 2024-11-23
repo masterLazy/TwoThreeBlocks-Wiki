@@ -11,6 +11,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MonaBold';
+    src: url('/font/mona-bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     font-family: 'SourceHanSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
@@ -34,12 +41,12 @@ html {
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #61b3ff;
-  --ifm-color-primary-dark: #3ea2ff;
-  --ifm-color-primary-darker: #2c9aff;
-  --ifm-color-primary-darkest: #0080f6;
-  --ifm-color-primary-light: #84c4ff;
-  --ifm-color-primary-lighter: #96ccff;
-  --ifm-color-primary-lightest: #cbe6ff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-color-primary: #61b3ff;
+    --ifm-color-primary-dark: #3ea2ff;
+    --ifm-color-primary-darker: #2c9aff;
+    --ifm-color-primary-darkest: #0080f6;
+    --ifm-color-primary-light: #84c4ff;
+    --ifm-color-primary-lighter: #96ccff;
+    --ifm-color-primary-lightest: #cbe6ff;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
