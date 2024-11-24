@@ -6,4 +6,4 @@
 
 ![](https://i.ibb.co/HtSwtPn/image.jpg)
 
-“有一个人前来卖瓜”
+“有一个人前来买瓜”

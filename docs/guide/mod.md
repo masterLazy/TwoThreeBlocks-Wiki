@@ -14,7 +14,7 @@ sidebar_position: 2
 
 :::info
 
-你可以在 [mcmod.cn](https://www.mcmod.cn/) 上找到更多 mod。只要他们与服务器的版本匹配，且不需要服务器安装就能生效，理论上就可以正常使用。
+你可以在 [mcmod.cn](https://www.mcmod.cn/) 上找到更多 mod。只要其与服务器的版本匹配，且不需要服务器安装就能生效，理论上就可以正常使用。
 
 安装 mod 的方法略。（请注意前置 mod）
 
@@ -115,6 +115,6 @@ https://www.mcmod.cn/class/3697.html
 > Iris Shaders 是一个旨在与现有的 [ShadersModCore](https://www.mcmod.cn/class/2321.html) / [高清修复](https://www.mcmod.cn/class/36.html) 光影兼容的 Fabric 渲染模组。
 >
 > - Iris Shaders 使用 Mixin，致力于兼容来自 [ShadersModCore](https://www.mcmod.cn/class/2321.html) / [高清修复](https://www.mcmod.cn/class/36.html) 的光影，是 Fabric 下 [OptiFabric](https://www.mcmod.cn/class/1703.html) + Optifine 光影解决方案的有效替代品。
-> - 您可以从 [官网](javascript:void(0);) 获取安装器，该安装器已经包含了兼容的 [钠 (Sodium](https://www.mcmod.cn/class/2785.html))。注：若使用下载器安装会自动装好 [钠 (Sodium)](https://www.mcmod.cn/class/2785.html)，请不要再次手动安装。
+> - 你可以从 [官网](javascript:void(0);) 获取安装器，该安装器已经包含了兼容的 [钠 (Sodium](https://www.mcmod.cn/class/2785.html))。注：若使用下载器安装会自动装好 [钠 (Sodium)](https://www.mcmod.cn/class/2785.html)，请不要再次手动安装。
 > - Iris Shaders 的目标是使 Fabric 兼容光影，如果你正在寻求一个强大且高效的渲染管线工具，[Canvas Renderer](https://www.mcmod.cn/class/2862.html) 才是 Fabric 下相关领域的未来。
 > - 加入 [Iris Discord 服务器](javascript:void(0);) 以同社区一道讨论 Iris 的未来，并跟进最新开发进度。
