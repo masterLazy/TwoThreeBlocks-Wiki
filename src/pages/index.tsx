@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
                         height: '40em',
                         width: 'auto',
                         overflow: 'hidden',
-                        backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'https://i.ibb.co/s3n4x7n/ttb.jpg\')',
+                        backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'https://i.ibb.co/X5SbPf7/2024-09-15-22-56-25.png\')',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
                         backgroundRepeat: 'no-repeat'
@@ -53,6 +53,6 @@ export default function Home(): JSX.Element {
                     </div>
                 </center>
             </main>
-        </Layout>
+        </Layout >
     );
 }

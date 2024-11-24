@@ -5,9 +5,10 @@ sidebar_position: 1
 # 服务器概述
 
 <center>
-    <img src="https://i.ibb.co/c1WNhgB/ttb.png" />
+    <img src="https://i.ibb.co/HXpysv7/ttb.png" />
     <p>Logo-“2”和“3”组成的方块</p>
 </center>
+
 
 
 
