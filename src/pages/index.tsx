@@ -11,20 +11,14 @@ function HomepageHeader() {
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
-                <Heading as="h1" className="hero__title" style={{
-                    fontFamily: 'MonaBold, Times New Roman'
-                }}>
+                <Heading as="h1" className="hero__title">
                     Two Three Blocks
                 </Heading>
-                <p className="hero__subtitle" style={{
-                    fontFamily: 'MonaBold, Times New Roman, SourceHanSans'
-                }}>{siteConfig.tagline}</p>
+                <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
-                        to="/docs/intro" style={{
-                            fontFamily: 'SourceHanSans'
-                        }}>
+                        to="/docs/intro">
                         了解详情
                     </Link>
                 </div>

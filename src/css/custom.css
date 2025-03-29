@@ -4,22 +4,8 @@
  * work well for content-centric websites.
  */
 
-@font-face {
-    font-family: 'SourceHanSans';
-    src: url('/font/SourceHanSansSC.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MonaBold';
-    src: url('/font/Mona-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
-    font-family: 'SourceHanSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .admonitionHeading_Gvgb {
