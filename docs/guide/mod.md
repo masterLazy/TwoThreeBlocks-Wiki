@@ -81,15 +81,9 @@ https://www.mcmod.cn/class/3632.html
 
 ## 补丁型 Mod
 
-### MOF 离线多人修正
-
-https://www.mcmod.cn/class/10643.html
-
-> MultiOfflineFix 是一款 Forge/Fabric 模组，修复 Mojang 在 1.16.4/5 版本中的一个问题，以允许离线玩家加入多人游戏。
-
 ### CSL 万用皮肤补丁
 
-:::info
+:::info[此模组几乎无用]
 
 如果你是想在服务器中看到自己和别人的皮肤，你**不必**安装此 mod。请参阅：[新手引导/设置皮肤](/docs/guide/skin)
 

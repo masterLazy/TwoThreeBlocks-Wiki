@@ -22,7 +22,7 @@ PVP 是允许的。
 
 ## 第二步：安装 Minecraft
 
-你需要安装 Minecraft **1.16.5**，请[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
+你需要安装 Minecraft **1.21.4**，请[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
 
 :::note
 
@@ -30,9 +30,9 @@ PVP 是允许的。
 
 :::
 
-:::info[如果你没有购买正版账号，也可以进入 TTB]
+:::info
 
-在 1.16.5 中，离线玩家（即没有正版账号的玩家）不能进入多人游戏，解决办法请参阅：[新手引导/推荐的 Mod](/docs/guide/mod#mof-离线多人修正)
+如果你没有购买正版账号，也可以进入 TTB
 
 :::
 
