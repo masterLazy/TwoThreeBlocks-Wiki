@@ -4,8 +4,16 @@ sidebar_position: 1
 
 # 服务器概述
 
+```
+服务器地址：	ttbl.ocks.top:5565
+版本：		Java 1.21.4
+游戏模式：	生存模式
+需要的 mod：	无
+正版验证：	无（已安装登录保护 mod）
+```
+
 <center>
-    <img src="https://i.ibb.co/HXpysv7/ttb.png" />
+    <img src="/img/logo.webp" />
     <p>Logo-“2”和“3”组成的方块</p>
 </center>
 
@@ -14,17 +22,15 @@ sidebar_position: 1
 
 二三方块服务器（Two Three Blocks，TTB）成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
 
-:::info[二三方块人交流会]
+### 二三方块人交流会
 
 一个 Minecraft 玩家（**非官方**）团体，其成员主要来自 NNEZ 和 NNSZ。
 
 QQ 群号：488943940
 
-:::
-
 ## 我能在 TTB 里干什么？
 
-TTB 是一个**原版生存**服务器。版本为：**Java 1.21.4**。
+TTB 是一个**Java 原版生存**服务器。
 
 TTB 是一个离线服务器，即关闭了正版验证。这使得你不必拥有一个正版账号就可以在 TTB 中游玩。
 

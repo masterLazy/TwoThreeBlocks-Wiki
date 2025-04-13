@@ -11,8 +11,11 @@ function HomepageHeader() {
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
-                <Heading as="h1" className="hero__title">
-                    Two Three Blocks
+                <Heading as="h1" className="hero__title" style={{
+                    fontStyle: 'italic',
+                    fontWeight: 'lighter',
+                }}>
+                    TwoThreeBlocks
                 </Heading>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
@@ -39,11 +42,52 @@ export default function Home(): JSX.Element {
                         height: '40em',
                         width: 'auto',
                         overflow: 'hidden',
-                        backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'https://i.ibb.co/X5SbPf7/2024-09-15-22-56-25.png\')',
+                        backgroundImage: 'url(\'img/cover-1.webp\')',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
                         backgroundRepeat: 'no-repeat'
                     }}>
+                        <h1 style={{
+                            color: 'white',
+                            margin: '2em',
+                            fontWeight: 'lighter',
+                            fontSize: '3em',
+                            float: 'left'
+                        }}>出生点光景</h1>
+                    </div>
+                    <div style={{
+                        height: '40em',
+                        width: 'auto',
+                        overflow: 'hidden',
+                        backgroundImage: 'url(\'img/校友亭.webp\')',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                        backgroundRepeat: 'no-repeat'
+                    }}>
+                        <h1 style={{
+                            color: 'white',
+                            margin: '2em',
+                            fontWeight: 'lighter',
+                            fontSize: '3em',
+                            float: 'right'
+                        }}>校友亭</h1>
+                    </div>
+                    <div style={{
+                        height: '40em',
+                        width: 'auto',
+                        overflow: 'hidden',
+                        backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'img/cover-2.webp\')',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                        backgroundRepeat: 'no-repeat'
+                    }}>
+                        <h1 style={{
+                            color: 'white',
+                            margin: '2em',
+                            fontWeight: 'lighter',
+                            fontSize: '3em',
+                            float: 'left'
+                        }}>加入我们，一起玩。</h1>
                     </div>
                 </center>
             </main>

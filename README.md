@@ -1,3 +1,4 @@
 # TwoThreeBlocks-Wiki
 
-二三方块 Minecraft 服务器官方 Wiki
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+

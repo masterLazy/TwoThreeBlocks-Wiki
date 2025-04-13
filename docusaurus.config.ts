@@ -103,7 +103,7 @@ const config: Config = {
                             href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
                         },
                     ],
-                },
+                }
             ],
             copyright: `Copyright © ${new Date().getFullYear()} @masterLazy. Built with Docusaurus.`,
         },
