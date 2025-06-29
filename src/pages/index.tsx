@@ -19,7 +19,7 @@ function HomepageHeader() {
                     <Link
                         className="button button--secondary button--lg"
                         to="/docs/intro">
-                        服务器概述➡
+                        了解服务器
                     </Link>
                 </div>
             </div>
