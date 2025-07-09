@@ -64,9 +64,14 @@ const config: Config = {
                     label: '服务器文档',
                 },
                 {
-                    to: '/docs/guide/alpha',
+                    to: '/docs/category/-指南',
                     position: 'left',
                     label: '服务器指南',
+                },
+                {
+                    to: '/docs/category/-地点列表',
+                    position: 'left',
+                    label: '地点列表',
                 },
                 {
                     to: '/docs/donate',
