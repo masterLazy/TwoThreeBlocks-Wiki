@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
     title: 'TwoThreeBlocks',
-    tagline: '二三方块 Minecraft 服务器',
+    tagline: '二三方块 Minecraft 服务器 Wiki',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -61,12 +61,12 @@ const config: Config = {
                     type: 'docSidebar',
                     sidebarId: 'mySidebar',
                     position: 'left',
-                    label: '服务器概述',
+                    label: '服务器文档',
                 },
                 {
                     to: '/docs/guide/alpha',
                     position: 'left',
-                    label: '加入服务器',
+                    label: '服务器指南',
                 },
                 {
                     to: '/docs/donate',

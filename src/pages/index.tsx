@@ -18,8 +18,15 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
+                        to="/docs/guide/alpha">
+                        加入服务器 💬
+                    </Link>
+                </div>
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
                         to="/docs/intro">
-                        了解服务器
+                        查看服务器概述
                     </Link>
                 </div>
             </div>

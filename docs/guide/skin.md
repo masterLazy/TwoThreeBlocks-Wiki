@@ -40,7 +40,11 @@ sidebar_position: 3
 /skin set web slim "https://i.ibb.co/wrqdmG3/gura.png"
 ```
 
-”默认“即和 Steve 一样的模型，”纤细“即和 Alex 一样的模型。
+:::tip
+
+请务必根据你要使用的皮肤指定正确的模型（Steve / Alex），否则皮肤会加载出错。
+
+:::
 
 在收到 `You need to reconnect to apply the skin` 的时候，重连服务器，就可以看到你的皮肤啦。
 

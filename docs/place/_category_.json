@@ -1,6 +1,6 @@
 {
-  "label": "🏞服务器地点列表",
-  "position": 4,
+  "label": "📍 服务器地点列表",
+  "position": 3,
   "link": {
     "type": "generated-index"
   }

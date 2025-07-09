@@ -10,11 +10,11 @@ sidebar_position: 1
 
 :::
 
-## 第一步：加入“二三方块人交流会”
+## ① 加入“二三方块人交流会”
 
 加入[“二三方块人交流会”](/docs/intro#二三方块人交流会)，等待管理员审核。
 
-## 第二步：安装 Minecraft
+## ② 安装 Minecraft
 
 你需要安装 Minecraft **1.21.4**，请[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 
 :::
 
-## 第三步：加入服务器
+## ③ 加入服务器
 
 1. 向 TTB 的管理员申请，将你的游戏 ID 加入白名单。管理员名单请见[服务器概述](/docs/intro/#管理员名单)。
 
