@@ -10,11 +10,11 @@ sidebar_position: 1
 
 :::
 
-## ① 加入“二三方块人交流会”
+## 1. 加入“二三方块人交流会”
 
 加入[“二三方块人交流会”](/docs/intro#二三方块人交流会)，等待管理员审核。
 
-## ② 安装 Minecraft
+## 2. 安装 Minecraft
 
 你需要安装 Minecraft **1.21.4**，请[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
 
@@ -26,13 +26,13 @@ sidebar_position: 1
 
 :::info
 
-如果你没有购买正版账号，也可以进入 TTB
+如果你没有购买正版账号，也可以进入 TTB。
 
 :::
 
-## ③ 加入服务器
+## 3. 加入服务器
 
-1. 向 TTB 的管理员申请，将你的游戏 ID 加入白名单。管理员名单请见[服务器概述](/docs/intro/#管理员名单)。
+1. 向服务器管理员提供你的用户名，申请加入白名单。管理员名单请见[服务器概述](/docs/intro/#管理员名单)。
 
 2. 在 `多人游戏>添加服务器` 中输入 TTB 的地址：
 
@@ -51,13 +51,19 @@ sidebar_position: 1
 1. 管理员同意你加入白名单后，通常会为你分配一个初始密码[^1]。请使用初始密码登录。
    - 使用初始密码登录之后，你可以使用 `/password change` 命令[^2]更改你的密码。
    - 如果没有（这几乎不会发生），请使用 `/register`  命令[^2]注册。请牢记密码，每次进入服务器都必须登录，这会用到你的密码。
+   
+   ```text title="/register 注册范例"
+   /register q8EE92s q8EE92s
+   ```
 
 [^1]: 初始密码是一个由 8 位大小写英文字母和数字构成的随机字符串
 [^2]: 详见：[服务器 Mod 列表/LazyLogin](/docs/mod/lazylogin)
 
 :::info
 
-TTB 使用你在 Minecraft 中的用户名作为你的“身份证”，而非 UUID。我们通过安装[白名单修复 mod](/docs/mod/lazylogin) 来做到这一点。
+TTB 使用你在 Minecraft 中的用户名计算 UUID（唯一识别码）。我们通过安装[白名单修复 mod](/docs/mod/lazylogin) 来做到这一点。
+
+这就保证了可以兼容正版登录和离线登录的用户。
 
 :::
 
