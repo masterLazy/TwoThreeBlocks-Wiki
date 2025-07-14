@@ -92,12 +92,20 @@ const config: Config = {
                     title: '文档',
                     items: [
                         {
-                            label: '服务器概述',
+                            label: '概述',
                             to: '/docs/intro',
                         },
                         {
-                            label: '加入服务器',
-                            to: '/docs/guide/alpha'
+                            label: '指南',
+                            to: '/docs/category/-指南'
+                        },
+                        {
+                            label: '地点列表',
+                            to: '/docs/category/-地点列表'
+                        },
+                        {
+                            label: '赞助者名单',
+                            to: '/docs/category/赞助者名单'
                         }
                     ],
                 },
@@ -105,13 +113,34 @@ const config: Config = {
                     title: '更多',
                     items: [
                         {
-                            label: 'GitHub',
+                            label: '本站GitHub仓库',
                             href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
+                        },
+                    ],
+                },
+                {
+                    title: '常用网站',
+                    items: [
+                        {
+                            label: '中文Minecraft Wiki镜像站 (Bilibili)',
+                            href: 'https://wiki.biligame.com/mc/Minecraft_Wiki',
+                        },
+                        {
+                            label: 'Modrinth (Mod 下载)',
+                            href: 'https://modrinth.com/',
+                        },
+                        {
+                            label: 'MC百科 (mcmod.cn)',
+                            href: 'https://www.mcmod.cn/',
+                        },
+                        {
+                            label: 'ChunkBase',
+                            href: 'https://www.chunkbase.com/',
                         },
                     ],
                 }
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} @masterLazy | Built with Docusaurus`,
+            copyright: `Copyright © ${new Date().getFullYear()} @TwoThreeBlocks | Built with Docusaurus`,
         },
         prism: {
             theme: prismThemes.github,
