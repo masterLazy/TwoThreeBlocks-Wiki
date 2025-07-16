@@ -12,7 +12,7 @@ sidebar_position: 1
 ```
 
 <center>
-    <img src="/img/logo.webp" />
+    <img src="/img/logo.webp" width="300em"/>
     <p>Logo-“2”和“3”组成的方块</p>
 </center>
 
