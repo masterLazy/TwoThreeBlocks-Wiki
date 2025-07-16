@@ -25,8 +25,8 @@ const config: Config = {
     // useful metadata like html lang. For example, if your site is Chinese, you
     // may want to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'zh-cn',
-        locales: ['zh-cn'],
+        defaultLocale: 'zh-Hans',
+        locales: ['zh-Hans'],
     },
 
     presets: [
@@ -146,6 +146,17 @@ const config: Config = {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
         },
+        future: {
+            experimental_faster: true,
+        },
+        plugins: [
+            [
+                'docusaurus-lunr-search',
+                {
+                    languages: ['en', 'cn']
+                }
+            ]
+        ]
     } satisfies Preset.ThemeConfig,
 };
 
