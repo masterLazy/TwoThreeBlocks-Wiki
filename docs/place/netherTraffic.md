@@ -7,9 +7,10 @@ sidebar_position: 2
 **下界交通**通过利用 “下界 1 格 = 主世界 8 格” 的空间优势，大大节省在主世界中的交通时间。
 
 <center>
-    <img src="/img/place/boatOnNetherTraffic.webp"/>
+    <img src="/img/place/netherTraffic-2.webp"/>
     <p>船在下界交通的冰道上</p>
 </center>
+
 :::tip
 
 冰道上的冰既有蓝冰、也有浮冰、普通冰。不要在普通冰的路段放置光源......
@@ -20,7 +21,7 @@ sidebar_position: 2
 
 下面是服务器下界交通冰道的地图：
 
-<img src="/img/place/netherTraffic.webp" style={{ width: '100%', imageRendering: 'pixelated' }} />
+<img src="/img/place/netherTraffic-1.webp" style={{ width: '100%', imageRendering: 'pixelated' }} />
 
 ---
 
@@ -47,3 +48,11 @@ sidebar_position: 2
 表中【某地】表示通向某地的下界传送门。
 
 :::
+
+### 基岩下层入口
+
+在出生点下界传送门附近：
+
+![](/img/place/netherTraffic-3.webp)
+
+从这里下去可以到达 [下界石英矿场](/docs/place/machine/下界石英矿场)。
