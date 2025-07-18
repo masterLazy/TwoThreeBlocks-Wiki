@@ -55,7 +55,7 @@ msterlazy@qq.com
 
 
 
-文档都放在服务器的 `/docs` 目录下，具体来说（和浏览器显示的的文档网址是类似的！其实不必记忆下面的内容）：
+文档都放在服务器的 `/docs` 目录下，具体来说（和浏览器显示的的文档网址是类似的！不必记忆）：
 
 - “指南” 文档放在 `/docs/guide` 目录下。
 
@@ -81,7 +81,7 @@ msterlazy@qq.com
 ```
 主要建造者：	建造者甲, 建造者乙
 下界：		+xxx -yyy +zzz
-主世界：	+xxx -yyy +zzz
+主世界：		+xxx -yyy +zzz
 末地：		+xxx -yyy +zzz
 ```
 
@@ -132,7 +132,7 @@ msterlazy@qq.com
 如果你有一定的编程基础，而且掌握 Markdown 和 Git，那就太好啦！让我们介绍一下本 Wiki 是如何运作的：
 
 - 所有 Wiki 文档都以 Markdown（`.md`）格式存储，并使用 [Docusaurus](https://www.docusaurus.cn/docs) 构建成网页。
-- 本 Wiki 实际上时托管在 Github 上的仓库（由 Github Pages 提供网站服务器）。Github Pages 是一项免费服务，允许托管静态的网页。所谓静态就是指，网站的所有数据在发布后不会被修改。举个反例：你可以把视频上传到 Bilibili，所以 Bilibili 不是静态网站。本 Wiki 每次修改都必须重新构建一次。
+- 本 Wiki 实际上是托管在 Github 上的仓库（由 Github Pages 提供网站服务器）。Github Pages 是一项免费服务，允许托管静态的网页。所谓静态就是指，网站的所有数据在发布后不会被修改。因此本 Wiki 每次修改都必须重新构建一次。
 - 仓库中的 `master` 分支存放文档源文件，在本地执行构建之后推送到 `github-pages` 分支。
 
 也就是说，你可以通过在 Github 仓库上贡献的方法编辑 / 创建 Wiki 页面。
