@@ -16,7 +16,9 @@ sidebar_position: 1
 
 ## 2. 安装 Minecraft
 
-你需要安装 Minecraft **1.21.4**，请[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
+你需要安装 Minecraft **1.21.4**，我们推荐在 “二三方块人交流会” 的群文件中下载名为 `TwoThreeBlocks.zip` 的整合包，内含启动器，方便快捷。
+
+或者你可以[自行查找安装教程](https://cn.bing.com/search?pglt=129&q=如何安装minecraft+java版)。
 
 :::note
 
