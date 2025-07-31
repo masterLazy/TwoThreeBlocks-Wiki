@@ -1,4 +1,10 @@
 # BBOR 自然生成建筑结构显示
+:::info 此页面已过时
+
+BBOR 没有适用于 1.21.4 的版本，所以服务器现在没有安装这个mod。
+
+:::
+
 这个 mod 的全称是：Bounding Box Outline Reloaded。
 
 https://www.mcmod.cn/class/1869.html

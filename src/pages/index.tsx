@@ -41,18 +41,26 @@ export default function Home(): JSX.Element {
             description="Description will go into a meta tag in <head />">
             <HomepageHeader />
             <main>
-                <center>
-                    <div style={{
-                        height: '40em',
-                        width: 'auto',
-                        overflow: 'hidden',
-                        backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'img/cover.webp\')',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center center',
-                        backgroundRepeat: 'no-repeat'
-                    }}>
-                    </div>
-                </center>
+                <div style={{
+                    height: '40em',
+                    width: 'auto',
+                    overflow: 'hidden',
+                    backgroundImage: 'url(\'img/cover.webp\')',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center',
+                    backgroundRepeat: 'no-repeat'
+                }}>
+                </div>
+                <div style={{
+                    height: '40em',
+                    width: 'auto',
+                    overflow: 'hidden',
+                    backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'img/cover-2.webp\')',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center',
+                    backgroundRepeat: 'no-repeat'
+                }}>
+                </div>
             </main>
         </Layout >
     );
