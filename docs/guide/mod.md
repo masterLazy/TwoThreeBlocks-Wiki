@@ -4,35 +4,21 @@ sidebar_position: 2
 
 # 推荐的 Mod
 
-在上一节中，我们介绍的是在 TTB 中最低限度游玩的方法。如果你想要提升游戏体验，那么我们推荐你安装这些 mod。
+:::note
 
-:::info
-
-本节提到的大部分 mod 都可以在“二三方块人交流会”的 QQ 群中找到。
+本节内容需要更新。
 
 :::
 
+在前边的章节中，我们介绍的是在 TTB 中最低限度游玩的方法。如果你想要提升游戏体验，我们推荐你安装这些 mod。
+
 :::info
 
-你可以在 [mcmod.cn](https://www.mcmod.cn/) 上找到更多 mod。只要其与服务器的版本匹配，且不需要服务器安装就能生效，理论上就可以正常使用。
-
-安装 mod 的方法略。（请注意前置 mod）
+本节提到的大部分 mod 都包含在“二三方块人交流会”的 QQ 群中提供的整合包 `TwoThreeBlocks.zip` 中。
 
 :::
 
 ## 辅助型 Mod
-
-### BBOR 自然生成建筑结构显示
-
-https://www.mcmod.cn/class/1869.html
-
-对于一般玩家，这个 mod 可以显示刷怪方块，辅助你插火把，或者做照明。
-
-对于生电玩家，这可以显示自然建筑结构。
-
-#### 另请参阅
-
-[服务器 Mod 列表/BBOR 自然生成建筑结构显示](https://masterlazy.github.io/TwoThreeBlocks-Wiki/docs/mod/bbor)
 
 ### Tweakeroo
 
