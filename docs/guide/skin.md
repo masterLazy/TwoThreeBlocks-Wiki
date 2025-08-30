@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # 设置皮肤
@@ -68,7 +68,7 @@ MineSkin 是国外服务器，其可能无法访问国内的一些网站。
 
 ## 另请参阅
 
-[服务器 Mod 列表/SkinRestorer](/docs/mod/skinrestorer)
+[服务器 Mod 列表](/docs/servermod)
 
 [Commands · Suiranoil/SkinRestorer Wiki](https://github.com/Suiranoil/SkinRestorer/wiki/Commands)
 

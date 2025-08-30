@@ -54,11 +54,11 @@ TTB 欢迎所有热爱 Minecraft（或者想要体验 Minecraft）的校友加�
 	/register q8EE92s q8EE92s
 	```
 
-- 登录后你可以修改密码，使用的是 `/password change` 命令。[详见这里](/docs/mod/lazylogin)。
+- 登录后你可以修改密码，使用的是 `/password change` 命令。[详见这里](/docs/guide/login)。
 
-[^1]: TTB 使用 Minecraft 中的用户名来管理白名单。因而，你无需担心正版与离线账户不兼容的问题。我们通过安装[白名单修复 mod](/docs/mod/lazylogin) 来做到这一点。
+[^1]: TTB 使用 Minecraft 中的用户名来管理白名单。因而，你无需担心正版与离线账户不兼容的问题。我们通过安装[白名单修复 mod](/docs/guide/login) 来做到这一点。
 [^2]: 初始密码是一个由 8 位大小写英文字母和数字构成的随机字符串
-[^3]: 详见：[服务器 Mod 列表/LazyLogin](/docs/mod/lazylogin)
+[^3]: 详见：[登录 / 注册系统](/docs/guide/login)
 
 :::warning[如果你忘记了你的密码]
 
@@ -69,6 +69,14 @@ TTB 欢迎所有热爱 Minecraft（或者想要体验 Minecraft）的校友加�
 ## 下一步做什么？
 
 你可以自由地探索服务器。或者，如果你希望更多地了解服务器，本 Wiki 是你的好帮手。
+
+:::info
+
+你可能会注意到，服务器中的游戏机制似乎与原版 Minecraft 有些差异。
+
+关于这些差异的解释，请看：[有哪些游戏行为被改变了？](http://localhost:3000/docs/guide/whatsspecial)。
+
+:::
 
 利用 Wiki，你可以了解服务器里存在的机器，以及它们的位置。这会非常有利于你准备材料。强烈建议建议在向他人提出问题前在 Wiki 上寻找答案（也许别人也需要先查询 Wiki 才能告诉你答案！）
 

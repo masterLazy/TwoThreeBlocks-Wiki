@@ -1,7 +1,10 @@
-# LazyLogin
-https://www.mcmod.cn/class/16519.html
+---
+sidebar_position: 5
+---
 
-服务器使用的登录兼白名单修复 mod。
+# 登录 / 注册系统
+
+LazyLogin 是服务器使用的登录兼白名单修复 mod：https://www.mcmod.cn/class/16519.html。
 
 你**不需**在客户端安装它就可以正常使用功能。
 

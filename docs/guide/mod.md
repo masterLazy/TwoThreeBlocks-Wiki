@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 推荐的 Mod
@@ -64,27 +64,6 @@ https://www.mcmod.cn/class/1766.html
 https://www.mcmod.cn/class/3632.html
 
 在方块实体（比如箱子）很多的时候，可以大幅提高你的 FPS。比如在出生点周围。
-
-## 补丁型 Mod
-
-### CSL 万用皮肤补丁
-
-:::info[此模组几乎无用]
-
-如果你是想在服务器中看到自己和别人的皮肤，你**不必**安装此 mod。请参阅：[新手引导/设置皮肤](/docs/guide/skin)
-
-安装此 mod 不会影响服务器中的皮肤显示。
-
-:::
-
-https://www.mcmod.cn/class/883.html
-
-安装这个 mod 进入 TTB 会造成以下已知的影响：
-
-- 按下 `Tab` 键的时候看到其他玩家的皮肤头像
-- 可能会从奇怪的披风网站加载到奇怪的披风[^1]。
-
-[^1]: 比如用户 `bot_1`
 
 ## 光影加载器
 
