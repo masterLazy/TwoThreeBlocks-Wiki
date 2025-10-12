@@ -131,7 +131,7 @@ msterlazy@qq.com
 
 如果你有一定的编程基础，而且掌握 Markdown 和 Git，那就太好啦！让我们介绍一下本 Wiki 是如何运作的：
 
-- 所有 Wiki 文档都以 Markdown（`.md`）格式存储，并使用 [Docusaurus](https://www.docusaurus.cn/docs) 构建成网页。
+- 所有 Wiki 文档都以 Markdown（`.md`）格式存储，并使用 [Docusaurus](https://docusaurus.io/zh-CN/docs) 构建成网页。
 - 本 Wiki 实际上是托管在 Github 上的仓库（由 Github Pages 提供网站服务器）。Github Pages 是一项免费服务，允许托管静态的网页。所谓静态就是指，网站的所有数据在发布后不会被修改。因此本 Wiki 每次修改都必须重新构建一次。
 - 仓库中的 `master` 分支存放文档源文件，在本地执行构建之后推送到 `github-pages` 分支。
 
@@ -147,4 +147,4 @@ msterlazy@qq.com
 - `/docs` 是所有文档所在的目录。
 - `/static/img` 存放了所有的图片，而关于地点的图片都放在 `/static/img/place` 下。
 
-请自行了解更多关于 Docusaurus 的知识。
+请自行了解更多关于 Docusaurus 的知识：[Docusaurus 介绍 | Docusaurus](https://docusaurus.io/zh-CN/docs)

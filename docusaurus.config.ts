@@ -116,6 +116,10 @@ const config: Config = {
                             label: '本站GitHub仓库',
                             href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
                         },
+                        {
+                            label: '本站许可CC BY-NC-SA 4.0',
+                            href: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+                        }
                     ],
                 },
                 {
@@ -140,7 +144,7 @@ const config: Config = {
                     ],
                 }
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} @TwoThreeBlocks | Built with Docusaurus`,
+            copyright: `© ${new Date().getFullYear()} TwoThreeBlocks · Built with Docusaurus · CC BY-NC-SA 4.0`,
         },
         prism: {
             theme: prismThemes.github,
