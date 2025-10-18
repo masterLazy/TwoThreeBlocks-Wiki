@@ -3,22 +3,84 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.header {
+  background: var(--ifm-footer-background-color);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.body {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.linkCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
-.buttons {
+.linkCard {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 1.1rem;
+  transition: all 0.3s;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.linkCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-primary);
+  color: inherit;
+}
+
+.photoCardContainer {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
+  text-align: left;
+  gap: 1rem;
+}
+
+.photoCard {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.photoCard:hover {
+  transform: translateY(-5px);
+  border: 1px solid var(--ifm-color-primary);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photoCard img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.photoCardContent {
+  padding: 1rem;
+}
+
+.photoCard h3 {
+  margin-bottom: 0.5rem;
 }

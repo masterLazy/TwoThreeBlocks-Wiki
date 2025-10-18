@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from '@theme/ThemedImage';
+import QQGroupCard from '@site/src/components/QQGroupCard';
+
 # ✨服务器概述
 
 ```
@@ -12,20 +16,23 @@ sidebar_position: 1
 ```
 
 <center>
-    <img src="/img/logo.webp" width="300em"/>
+    <ThemedImage
+        alt='TTB Logo'
+        sources={{
+            light: useBaseUrl('/img/logo-light.svg'),
+            dark: useBaseUrl('/img/logo-dark.svg'),
+        }}
+        width='25%'
+    />
     <p>Logo-“2”和“3”组成的方块</p>
 </center>
 
 
+Two Three Blocks 服务器 （TTB，二三方块） 成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
 
+二三方块人交流会是一个 Minecraft 玩家（**非官方**）团体，其成员主要来自 NNEZ 和 NNSZ。你可以点击下面的卡片以添加群聊。
 
-二三方块服务器（Two Three Blocks，TTB）成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
-
-## 二三方块人交流会
-
-一个 Minecraft 玩家（**非官方**）团体，其成员主要来自 NNEZ 和 NNSZ。
-
-QQ 群号：488943940
+<QQGroupCard/>
 
 ## 我能在 TTB 里干什么？
 

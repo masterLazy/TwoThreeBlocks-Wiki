@@ -46,12 +46,12 @@ msterlazy@qq.com
 ```markdown
 ![](/img/logo.webp)
 或者
-<center><img src="/img/logo.webp" width="300em"/></center>
+<center><img src="/img/title-text-light.svg" height="50rem"/></center>
 ```
 
 效果：
 
-<center><img src="/img/logo.webp" width="300em"/></center>
+<center><img src="/img/title-text-light.svg" height="50rem"/></center>
 
 
 

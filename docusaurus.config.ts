@@ -19,7 +19,6 @@ const config: Config = {
     projectName: 'TwoThreeBlocks Wiki', // Usually your repo name.
 
     onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'warn',
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -53,20 +52,21 @@ const config: Config = {
         navbar: {
             title: 'TwoThreeBlocks',
             logo: {
-                alt: 'My Site Logo',
-                src: 'img/ttb.svg',
+                alt: 'TTB Logo',
+                src: 'img/logo-light.svg',
+                srcDark: 'img/logo-dark.svg',
             },
             items: [
                 {
                     type: 'docSidebar',
                     sidebarId: 'mySidebar',
                     position: 'left',
-                    label: '服务器文档',
+                    label: '文档',
                 },
                 {
                     to: '/docs/category/-指南',
                     position: 'left',
-                    label: '服务器指南',
+                    label: '指南',
                 },
                 {
                     to: '/docs/category/-地点列表',
@@ -86,7 +86,7 @@ const config: Config = {
             ],
         },
         footer: {
-            style: 'dark',
+            style: 'light',
             links: [
                 {
                     title: '文档',
@@ -117,8 +117,8 @@ const config: Config = {
                             href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
                         },
                         {
-                            label: '本站许可CC BY-NC-SA 4.0',
-                            href: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+                            label: '二三方块人交流会',
+                            href: 'https://qm.qq.com/q/7ZjpDLT6De'
                         }
                     ],
                 },
@@ -144,7 +144,7 @@ const config: Config = {
                     ],
                 }
             ],
-            copyright: `© ${new Date().getFullYear()} TwoThreeBlocks · Built with Docusaurus · CC BY-NC-SA 4.0`,
+            copyright: `© ${new Date().getFullYear()} TwoThreeBlocks · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
         },
         prism: {
             theme: prismThemes.github,
@@ -152,15 +152,7 @@ const config: Config = {
         },
         future: {
             experimental_faster: true,
-        },
-        plugins: [
-            [
-                'docusaurus-lunr-search',
-                {
-                    languages: ['en', 'cn']
-                }
-            ]
-        ]
+        }
     } satisfies Preset.ThemeConfig,
 };
 

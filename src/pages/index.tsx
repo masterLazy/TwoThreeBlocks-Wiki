@@ -1,65 +1,93 @@
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from '@theme/ThemedImage';
 
 import styles from './index.module.css';
-
-function HomepageHeader() {
-    const { siteConfig } = useDocusaurusContext();
-    return (
-        <header className={clsx('hero hero--primary', styles.heroBanner)}>
-            <div className="container">
-                <Heading as="h1" className="hero__title">
-                    TwoThreeBlocks
-                </Heading>
-                <p className="hero__subtitle">{siteConfig.tagline}</p>
-                <div className={styles.buttons}>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/intro">
-                        服务器概述 📔
-                    </Link>
-                </div>
-                <div className={styles.buttons}>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/guide/alpha">
-                        加入服务器 🖐
-                    </Link>
-                </div>
-            </div>
-        </header>
-    );
-}
 
 export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <Layout
-            description="Description will go into a meta tag in <head />">
-            <HomepageHeader />
+        <Layout description='Description will go into a meta tag in <head />'>
             <main>
-                <div style={{
-                    height: '40em',
-                    width: 'auto',
-                    overflow: 'hidden',
-                    backgroundImage: 'url(\'img/cover.webp\')',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    backgroundRepeat: 'no-repeat'
-                }}>
+                <div className={styles.header}>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        margin: '1rem'
+                    }}>
+                        <ThemedImage
+                            alt='TTB Logo'
+                            sources={{
+                                light: useBaseUrl('/img/title-text-light.svg'),
+                                dark: useBaseUrl('/img/title-text-dark.svg'),
+                            }}
+                            width='600em'
+                        />
+                    </div>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        textAlign: 'center',
+                    }}>
+                        <p>Two Three Blocks ·  二三方块服务器官方 Wiki</p>
+                    </div>
+                    <div className={styles.linkCardContainer}>
+                        <Link to={useBaseUrl('/docs/guide/alpha')}
+                            className={styles.linkCard}>
+                            👋 立即加入服务器！
+                        </Link>
+                        <Link to={useBaseUrl('/docs/intro')}
+                            className={styles.linkCard}>
+                            📔 服务器概述
+                        </Link>
+                    </div>
                 </div>
-                <div style={{
-                    height: '40em',
-                    width: 'auto',
-                    overflow: 'hidden',
-                    backgroundImage: 'linear-gradient(to top, rgba(48, 56, 70, 1), rgba(48, 56, 70, 0)), url(\'img/cover-2.webp\')',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    backgroundRepeat: 'no-repeat'
-                }}>
+                <div className={styles.body}>
+                    <div style={{
+                        minWidth: '50%',
+                        maxWidth: '90%',
+                        textAlign: 'center',
+                    }}>
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            textAlign: 'left',
+                        }}>
+                            <div>
+                                <p>Two Three Blocks (TTB) 是一个公益的 Minecraft Java Edition 服务器，由一群热爱 Minecraft 的玩家成立。</p>
+                                <p>加入 TTB，无需正版，没有门槛，和小伙伴们一起自由畅快游玩 Minecraft。</p>
+                            </div>
+                        </div>
+                        <h2 style={{ padding: '1rem' }}>画廊</h2>
+                        <div className={styles.photoCardContainer}>
+                            <div className={styles.photoCard}>
+                                <img src={useBaseUrl('/img/cover.webp')} />
+                                <div className={styles.photoCardContent}>
+                                    <h3>✨ 一周年庆合照（2025）</h3>
+                                </div>
+                            </div>
+                            <div className={styles.photoCard}>
+                                <img src={useBaseUrl('/img/sky.webp')} />
+                                <div className={styles.photoCardContent}>
+                                    <h3>出生点的天空</h3>
+                                </div>
+                            </div>
+                            <div className={styles.photoCard}>
+                                <img src={useBaseUrl('/img/place/校友亭.webp')} />
+                                <div className={styles.photoCardContent}>
+                                    <h3>校友亭</h3>
+                                </div>
+                            </div>
+                            <div className={styles.photoCard}>
+                                <img src={useBaseUrl('/img/coast.webp')} />
+                                <div className={styles.photoCardContent}>
+                                    <h3>信标 · 水岸 · 樱花</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </Layout >
