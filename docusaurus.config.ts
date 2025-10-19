@@ -7,6 +7,11 @@ const config: Config = {
     tagline: '二三方块 Minecraft 服务器 Wiki',
     favicon: 'img/favicon.ico',
 
+    // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+    future: {
+        v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    },
+
     // Set the production url of your site here
     url: 'http://wiki.ocks.top/',
     // Set the /<baseUrl>/ pathname under which your site is served
@@ -48,6 +53,9 @@ const config: Config = {
     ],
 
     themeConfig: {
+        colorMode: {
+            respectPrefersColorScheme: true,
+        },
         // Replace with your project's social card
         navbar: {
             title: 'TwoThreeBlocks',
