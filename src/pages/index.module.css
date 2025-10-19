@@ -30,7 +30,6 @@
 }
 
 .linkCard {
-  background-color: var(--ifm-background-surface-color);
   border-radius: 8px;
   padding: 1.1rem;
   transition: all 0.3s;
@@ -42,6 +41,7 @@
 }
 
 .linkCard:hover {
+  background-color: var(--ifm-background-surface-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   border: 1px solid var(--ifm-color-primary);

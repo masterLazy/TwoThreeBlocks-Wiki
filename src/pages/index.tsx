@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
+import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
@@ -60,7 +61,7 @@ export default function Home(): JSX.Element {
                                 <p>加入 TTB，无需正版，没有门槛，和小伙伴们一起自由畅快游玩 Minecraft。</p>
                             </div>
                         </div>
-                        <h2 style={{ padding: '1rem' }}>画廊</h2>
+                        <Heading as='h2' id='画廊' style={{ padding: '1rem' }}>画廊</Heading>
                         <div className={styles.photoCardContainer}>
                             <div className={styles.photoCard}>
                                 <img src={useBaseUrl('/img/cover.webp')} />
