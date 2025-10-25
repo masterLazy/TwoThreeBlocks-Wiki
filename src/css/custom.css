@@ -4,8 +4,21 @@
  * work well for content-centric websites.
  */
 
-html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.body,
+.footer,
+.footer__title,
+.admonitionHeading_Gvgb {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif !important;
+    /*color: tomato !important;*/
 }
 
 .admonitionHeading_Gvgb {
