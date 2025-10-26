@@ -1,6 +1,6 @@
 # TwoThreeBlcoks-Wiki
 
-这是 Minecraft 服务器 **Two-Three-Blocks** 的官方 Wiki。
+这是 Minecraft 服务器 **Two-Three-Blocks** 的官方 Wiki。所有文档以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可，组件以 Apache License 2.0 许可。
 
 网址：[wiki.ocks.top](http://wiki.ocks.top/)
 
