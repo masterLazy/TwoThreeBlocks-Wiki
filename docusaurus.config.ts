@@ -87,7 +87,7 @@ const config: Config = {
                     label: '🤝 赞助我们',
                 },
                 {
-                    href: 'https://github.com/masterLazy/masterlazy.github.io',
+                    href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
                     position: 'right',
                     className: 'header-link header-github-link',
                 },

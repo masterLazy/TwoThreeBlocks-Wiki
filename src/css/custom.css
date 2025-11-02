@@ -55,7 +55,7 @@
     mask-image: url('/img/github.svg');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@350;450;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
 
 html,
 h1,
@@ -70,16 +70,6 @@ h6,
 .admonitionHeading_Gvgb {
     font-family: 'Noto Sans SC', sans-serif;
     /*color: tomato !important;*/
-}
-
-p,
-span {
-    font-weight: 450;
-}
-
-[data-theme='dark'] p,
-[data-theme='dark'] span {
-    font-weight: 350;
 }
 
 /* 下拉菜单 */
