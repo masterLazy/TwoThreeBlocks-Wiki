@@ -6,10 +6,11 @@ sidebar_position: 2
 
 **下界交通**通过利用 “下界 1 格 = 主世界 8 格” 的空间优势，大大节省在主世界中的交通时间。
 
-<center>
-    <img src="/img/place/netherTraffic-2.webp"/>
+<div className='group'>
+    <Img src='/img/place/netherTraffic-2.webp'>
     <p>船在下界交通的冰道上</p>
-</center>
+    </Img>
+</div>
 
 :::tip
 

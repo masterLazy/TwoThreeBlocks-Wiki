@@ -9,35 +9,76 @@
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  align-items: center;
+  text-align: center;
+}
+
+.headerContainer {
+  max-width: 95%;
+
+  @media (min-width: 61rem) {
+    max-width: 61rem;
+  }
+}
+
+.headerContainer p {
+  margin: 1rem;
 }
 
 .body {
   padding-top: 2rem;
   padding-bottom: 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.body h2 {
+  font-weight: normal;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.separator {
+  color: var(--ifm-color-emphasis-500);
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.avatar {
+  width: 7rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+
+  @media (min-width: 997px) {
+    width: 13rem;
+  }
 }
 
 .linkCardContainer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 997px) {
     flex-direction: row;
   }
 }
 
 .linkCard {
-  border-radius: 8px;
-  padding: 1.1rem;
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem;
   transition: all 0.3s;
   border: 1px solid var(--ifm-color-emphasis-300);
   margin: 0.5rem;
   text-decoration: none;
   color: inherit;
   display: block;
+  text-align: left;
 }
 
 .linkCard:hover {
@@ -48,40 +89,100 @@
   color: var(--ifm-color-emphasis-800);
 }
 
-.photoCardContainer {
+.textContainer {
+  width: 95%;
+
+  @media (min-width: 61rem) {
+    width: 61rem;
+  }
+}
+
+.photoContainer {
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   text-align: left;
   gap: 1rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 73rem) {
+    width: 73rem;
+  }
 }
 
-.photoCard {
+.photo {
   background-color: var(--ifm-background-surface-color);
   border-radius: 1rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
+  border: 1px solid transparent;
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
+  transition: border 0.3s;
+  flex: 1 1 calc(50% - 1rem);
+
+  @media (max-width: 997px) {
+    flex: 1 1 100%;
+  }
 }
 
-.photoCard:hover {
-  transform: translateY(-5px);
+.photo:hover {
   border: 1px solid var(--ifm-color-primary);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   color: var(--ifm-color-emphasis-800);
 }
 
-.photoCard img {
+.photo img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
 }
 
-.photoCardContent {
+.photoContent {
   padding: 1rem;
 }
 
-.photoCard h3 {
+.photo h3 {
   margin-bottom: 0.5rem;
+}
+
+.sponsorContainer {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 73rem) {
+    width: 73rem;
+  }
+}
+
+.sponsor {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 1.2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease;
+  width: calc(50% - 0.5rem);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-left: 1rem solid var(--ifm-color-primary);
+
+  @media (max-width: 997px) {
+    flex: 1 1 100%;
+  }
+}
+
+.sponsor:hover {
+  border: 1px solid var(--ifm-color-primary);
+  border-left: 0.5rem solid var(--ifm-color-primary);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: var(--ifm-color-primary);
+}
+
+.sponsor h3 {
+  margin: 0;
+  margin-right: 1rem;
 }

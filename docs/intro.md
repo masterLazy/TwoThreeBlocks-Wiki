@@ -28,7 +28,7 @@ import QQGroupCard from '@site/src/components/QQGroupCard';
 </center>
 
 
-Two Three Blocks 服务器 （TTB，二三方块） 成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
+TwoThreeBlocks 服务器 （TTB，二三方块） 成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
 
 二三方块人交流会是一个 Minecraft 玩家（**非官方**）团体，其成员主要来自 NNEZ 和 NNSZ。你可以点击下面的卡片以添加群聊。
 
@@ -56,6 +56,7 @@ TTB 的工业部门在不断完善中
 
 - d4vt
 - LeaDer_LD
+- lemoncola_87
 - MeihuaCN
 - msterLazy
 - sin_zri

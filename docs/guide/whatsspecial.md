@@ -38,5 +38,5 @@ sidebar_position: 2
 
 服务器安装了 Visible Traders。如果你没有安装 Visible Traders 在你的客户端，你会看到村民的所有交易（即使是未解锁的）。尽管如此，你不能进行那些未解锁的交易。这会使得你无法分辨那些是已解锁的交易。
 
-参见：[服务器 Mod 列表](/docs/servermod)
+参见：[服务器 Mod 列表](/docs/servermod#服务器端客户端-mod)
 

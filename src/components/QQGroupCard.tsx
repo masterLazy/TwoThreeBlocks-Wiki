@@ -22,8 +22,8 @@ export default function QQGroupCard({
                 <img src={avatarUrl} alt={groupName} className={styles.avatar} />
                 <div className={styles.info}>
                     <h3 className={styles.name}>{groupName}</h3>
-                    <p className={styles.number}>群号: {groupNumber}</p>
-                    <p className={styles.description}>{description}</p>
+                    <p className={styles.line}>群号: {groupNumber}</p>
+                    <p className={styles.line}>{description}</p>
                 </div>
             </div>
         </div>

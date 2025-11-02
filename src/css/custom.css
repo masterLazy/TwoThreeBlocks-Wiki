@@ -16,20 +16,46 @@
     --ifm-color-secondary: #ebedf0;
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    --ifm-color-primary-pale: #96ccff;
+    --ifm-color-primary-paler: #cbe6ff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
     --ifm-color-primary: #61b3ff;
-    --ifm-color-secondary: #313131;
     --ifm-color-primary-dark: #3ea2ff;
     --ifm-color-primary-darker: #2c9aff;
     --ifm-color-primary-darkest: #0080f6;
     --ifm-color-primary-light: #84c4ff;
     --ifm-color-primary-lighter: #96ccff;
     --ifm-color-primary-lightest: #cbe6ff;
+    --ifm-color-secondary: #313131;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-color-primary-pale: #2e5b85;
+    --ifm-color-primary-paler: #20405d;
 }
+
+/* 导航栏链接 */
+.header-link::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-color: var(--ifm-navbar-link-color);
+    transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.header-link:hover::before {
+    background-color: var(--ifm-navbar-link-hover-color);
+}
+
+.header-github-link::before {
+    mask-image: url('/img/github.svg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@350;450;700&display=swap');
 
 html,
 h1,
@@ -42,11 +68,42 @@ h6,
 .footer,
 .footer__title,
 .admonitionHeading_Gvgb {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
     /*color: tomato !important;*/
 }
+
+p,
+span {
+    font-weight: 450;
+}
+
+[data-theme='dark'] p,
+[data-theme='dark'] span {
+    font-weight: 350;
+}
+
+/* 下拉菜单 */
+.dropdown__menu {
+    padding: 0;
+}
+
+.dropdown__link {
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s;
+}
+
+.dropdown__link:first-child {
+    margin: 0;
+}
+
+/* 标签页面 */
+a[rel='tag'] span {
+    color: var(--ifm-font-color-base);
+}
+
+/*
+* 小组件
+*/
 
 /* 告示 */
 .admonitionHeading_Gvgb {
@@ -60,27 +117,27 @@ code:not([class]) {
     padding-right: 5px;
 }
 
-/* 暗色模式下自动翻转颜色的图片 */
-.invertable-img {
-    filter: none;
-}
-
-[data-theme='dark'] .invertable-img {
-    filter: brightness(0.89) invert(1) hue-rotate(180deg);
-}
-
 /* 选项卡 */
 li[role='tab'] {
     transition: all 0.2s;
     border-radius: 0;
 }
 
-/* h2 标题 */
+/* Markdown */
 .markdown>h2 {
-    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
+    border-bottom: var(--ifm-color-emphasis-500) solid 1px;
 }
 
-/* docs/tags */
-a[rel='tag'] span {
-    color: var(--ifm-font-color-base);
+/*
+* 自定义的 class
+*/
+
+/* 卡片组 */
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    justify-content: center;
+    align-items: center;
 }

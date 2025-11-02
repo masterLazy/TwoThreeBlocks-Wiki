@@ -1,0 +1,38 @@
+/**
+ * Copyright 2025 masterLazy
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+ */
+
+.imageContainer {
+    display: inline-block;
+    text-align: center;
+}
+
+.imageWrapper {
+    display: flex;
+    border: var(--ifm-color-emphasis-300) solid 1px;
+    border-radius: var(--ifm-global-radius);
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: contain;
+    max-height: var(--mlazy-img-max-height);
+    margin: 0;
+}
+
+[data-theme='dark'] .image {
+    filter: var(--mlazy-img-dark-filter);
+}

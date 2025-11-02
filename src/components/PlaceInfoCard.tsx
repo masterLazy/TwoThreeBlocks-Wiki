@@ -44,7 +44,7 @@ export default function PlaceInfoCard({
         <div className={styles.card}>
             <div className={styles.line}>
                 <span className={styles.title}>建造者</span>
-                <code>{builder}</code>
+                {builder}
             </div>
             {(overworld || nether || theEnd) && (<hr />)}
 

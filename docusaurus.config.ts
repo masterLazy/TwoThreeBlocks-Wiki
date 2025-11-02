@@ -77,19 +77,19 @@ const config: Config = {
                     label: '指南',
                 },
                 {
-                    to: '/docs/category/-地点列表',
+                    to: '/docs/category/地点列表',
                     position: 'left',
                     label: '地点列表',
                 },
                 {
                     to: '/docs/donate',
                     position: 'left',
-                    label: '赞助我们',
+                    label: '🤝 赞助我们',
                 },
                 {
-                    href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',
-                    label: 'GitHub',
+                    href: 'https://github.com/masterLazy/masterlazy.github.io',
                     position: 'right',
+                    className: 'header-link header-github-link',
                 },
             ],
         },
@@ -109,7 +109,7 @@ const config: Config = {
                         },
                         {
                             label: '地点列表',
-                            to: '/docs/category/-地点列表'
+                            to: '/docs/category/地点列表'
                         },
                         {
                             label: '赞助者名单',

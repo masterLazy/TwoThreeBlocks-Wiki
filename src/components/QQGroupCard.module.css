@@ -1,21 +1,21 @@
 .card {
     border: 1px solid var(--ifm-color-emphasis-300);
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem 0;
     cursor: pointer;
     transition: all 0.3s;
-}
+    color: var(--ifm-font-color-base);
 
-@media (min-width:768px) {
-    .card {
-        padding-left: 1.5rem;
+    @media(min-width: 997px) {
+        padding-left: 1rem;
     }
 }
 
 .card:hover {
     border: 1px solid var(--ifm-color-primary);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: var(--ifm-color-emphasis-800);
 }
 
 .content {
@@ -39,14 +39,7 @@
     margin: 0 0 8px 0;
 }
 
-.number {
-    margin: 0 0 4px 0;
-    font-size: 0.9em;
-    color: var(--ifm-color-emphasis-600);
-}
-
-.description {
-    margin: 0;
-    font-size: 0.9em;
-    color: var(--ifm-color-emphasis-600);
+.line {
+    margin: 0.2rem 0.4rem;
+    color: var(--ifm-color-emphasis-800);
 }

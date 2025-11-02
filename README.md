@@ -14,3 +14,21 @@
 网页使用 **Docusaurus** 构建；如果你想要**编辑 / 贡献**，请务必学习 **Markdown** 语法。
 
 - [Docusaurus 介绍 | Docusaurus](https://docusaurus.io/zh-CN/docs)
+
+## 安装依赖
+
+```bash
+yarn
+```
+
+## 本地开发
+
+```bash
+yarn start
+```
+
+## 构建
+
+```bash
+yarn build
+```

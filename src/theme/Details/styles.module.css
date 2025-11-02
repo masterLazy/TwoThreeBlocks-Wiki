@@ -1,0 +1,17 @@
+.details {
+  --docusaurus-details-decoration-color: var(--ifm-color-emphasis-500);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-color-emphasis-100);
+  transition: border-color 0.2s;
+}
+
+.details summary {
+  color: var(--ifm-font-color-base);
+}
+
+.details[open]:not(.isBrowser),
+.details[data-collapsed='false'].isBrowser {
+  border-color: var(--ifm-color-emphasis-500);
+}
