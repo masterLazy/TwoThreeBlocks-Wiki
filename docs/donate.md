@@ -17,10 +17,14 @@ TTB 是一个完全免费的服务器，加入我们不需要收费。大部分�
 ## 赞助渠道
 
 <div className='group'>
-    <Img src='/img/donate-alipay.webp'>
+    <Img>
+        ![](./assets/alipay.webp)
+
         支付宝
     </Img>
-    <Img src='/img/donate-wechat.webp'>
+    <Img>
+        ![](./assets/wechat.webp)
+
         微信支付
     </Img>
 </div>

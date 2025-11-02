@@ -13,7 +13,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-import React from 'react';
+import React, { Children } from 'react';
 
 import styles from './Img.module.css';
 
@@ -21,24 +21,25 @@ interface Img {
     src: string;
     alt?: string;
     invertable?: boolean;
-    maxHeight: string;
+    height: string;
     children: React.ReactNode;
 }
 
 export default function Img({
-    src, alt, invertable = false, maxHeight = '23rem', children
+    src, alt, invertable = false, height = '23rem', children
 }: Img) {
     const imgStyle = {
-        '--mlazy-img-max-height': maxHeight,
+        '--mlazy-img-max-height': height,
         '--mlazy-img-dark-filter': invertable ?
             'brightness(0.89) invert(1) hue-rotate(180deg)' : 'none',
     } as React.CSSProperties;
+    const childrenArray = Children.toArray(children);
     return (
         <div className={styles.imageContainer} style={imgStyle}>
             <div className={styles.imageWrapper} style={imgStyle}>
-                <img className={styles.image} src={src} alt={alt} />
+                {childrenArray[0]}
             </div>
-            {children}
+            {childrenArray.length > 1 && childrenArray[1]}
         </div>
     );
 };

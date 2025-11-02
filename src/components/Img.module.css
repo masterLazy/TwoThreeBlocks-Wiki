@@ -15,24 +15,30 @@
  */
 
 .imageContainer {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imageWrapper {
-    display: flex;
     border: var(--ifm-color-emphasis-300) solid 1px;
     border-radius: var(--ifm-global-radius);
     margin: 0.5rem 0;
     overflow: hidden;
 }
 
-.image {
+.imageWrapper img {
+    display: block;
     object-fit: contain;
     max-height: var(--mlazy-img-max-height);
+    width: auto;
     margin: 0;
 }
 
-[data-theme='dark'] .image {
+.imageWrapper p {
+    margin: 0;
+}
+
+[data-theme='dark'] .imageWrapper img {
     filter: var(--mlazy-img-dark-filter);
 }

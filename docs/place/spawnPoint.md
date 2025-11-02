@@ -14,7 +14,9 @@ sidebar_position: 1
 
 下面是服务器出生点周边的地图：
 
-<img src="/img/place/spawnPoint.webp" style={{ width: '100%', imageRendering: 'pixelated' }} />
+<Img height='100' style={{imageRendering: 'pixelated'}}>
+![](./assets/spawn-map.webp)
+</Img>
 
 ---
 

@@ -49,25 +49,25 @@ export default function Home() {
 
           <div className={styles.photoContainer}>
             <div className={styles.photo}>
-              <img src={useBaseUrl('/img/cover.webp')} />
+              <img src={require('@site/src/assets/anniversary/2025-3.webp').default} />
               <div className={styles.photoContent}>
                 <h3>✨ 一周年庆合照（2025）</h3>
               </div>
             </div>
             <div className={styles.photo}>
-              <img src={useBaseUrl('/img/sky.webp')} />
+              <img src={require('@site/src/assets/sky.webp').default} />
               <div className={styles.photoContent}>
                 <h3>出生点的天空</h3>
               </div>
             </div>
             <div className={styles.photo}>
-              <img src={useBaseUrl('/img/place/校友亭.webp')} />
+              <img src={require('@site/src/assets/校友亭.webp').default} />
               <div className={styles.photoContent}>
                 <h3>校友亭</h3>
               </div>
             </div>
             <div className={styles.photo}>
-              <img src={useBaseUrl('/img/coast.webp')} />
+              <img src={require('@site/src/assets/coast.webp').default} />
               <div className={styles.photoContent}>
                 <h3>信标 · 水岸 · 樱花</h3>
               </div>

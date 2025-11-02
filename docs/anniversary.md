@@ -10,9 +10,9 @@ TwoThreeBlocks 诞生于 2024-07-27，每年的 07-27 就是周年庆。
 
 ## ✨ 一周年  |  2025
 
-![](/img/anniversary/2025-1.webp)
+<Img height='100%'>![](@site/src/assets/anniversary/2025-1.webp)</Img>
 
-![](/img/anniversary/2025-2.webp)
+<Img height='100%'>![](@site/src/assets/anniversary/2025-2.webp)</Img>
 
 参加这次周年庆的人有（按字典序）：
 
