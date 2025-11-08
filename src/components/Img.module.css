@@ -31,7 +31,8 @@
     display: block;
     object-fit: contain;
     max-height: var(--mlazy-img-max-height);
-    width: auto;
+    /* Don't use auto here */
+    width: 100%;
     margin: 0;
 }
 

@@ -177,7 +177,6 @@
 
 .sponsor:hover {
   border: 1px solid var(--ifm-color-primary);
-  border-left: 0.5rem solid var(--ifm-color-primary);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   color: var(--ifm-color-primary);
 }

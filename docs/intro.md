@@ -8,12 +8,9 @@ import QQGroupCard from '@site/src/components/QQGroupCard';
 
 # ✨服务器概述
 
-```
-版本：		Java 1.21.4
-游戏模式：	生存模式
-需要的 mod：	无
-正版验证：	无（已安装登录保护 mod）
-```
+import Overview from '@site/src/components/Overview'
+
+<Overview />
 
 <center>
     <ThemedImage
@@ -24,9 +21,8 @@ import QQGroupCard from '@site/src/components/QQGroupCard';
         }}
         width='25%'
     />
-    <p>Logo-“2”和“3”组成的方块</p>
+    <p>我们的 Logo：2 和 3 组成的方块</p>
 </center>
-
 
 TwoThreeBlocks 服务器 （TTB，二三方块） 成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
 

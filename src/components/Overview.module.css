@@ -13,15 +13,34 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-.card {
-    background: var(--ifm-color-emphasis-100);
-    border: 1px solid transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
-    border-radius: var(--ifm-global-radius);
-    border: 1px solid var(--ifm-color-emphasis-300);
-    padding: 0.6rem;
+
+.border {
+    padding: 2px;
+    border-radius: 10px;
+    overflow: hidden;
     margin: 1rem 0;
-    transition: border 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
+    background: linear-gradient(90deg,
+            #ff9aa2, #ffce9e, #ffff9e, #9effae, #9ed5ff, #d9b3ff, #ff9aff, #ff9aa2, #ffce9e);
+    background-size: 800% 100%;
+    animation: smoothFlow 6s linear infinite;
+}
+
+@keyframes smoothFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--ifm-color-emphasis-100);
+    padding: 0.6rem;
     color: var(--ifm-font-color-base);
 
     @media(min-width: 997px) {
@@ -33,6 +52,10 @@
     background-color: var(--ifm-background-surface-color);
 }
 
+.card>hr {
+    margin: 0.5rem 0;
+}
+
 .line {
     margin: 0.4rem;
 }
@@ -40,21 +63,5 @@
 .card .title {
     display: inline-block;
     font-weight: bold;
-    width: 6rem;
-}
-
-.card code {
-    border: none;
-    background: inherit;
-    padding: 0;
-    margin: 0;
-    margin-right: 2px;
-}
-
-.card>hr {
-    margin: 0.5rem 0;
-}
-
-.noData {
-    color: var(--ifm-color-emphasis-600);
+    min-width: 8rem;
 }

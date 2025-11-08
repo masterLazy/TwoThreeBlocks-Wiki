@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './QQGroupCard.module.css';
 
 interface QQGroupCardProps {
-    avatarUrl?: string;
+    avatarUrl: string;
     groupName: string;
     groupNumber: string;
     description: string;

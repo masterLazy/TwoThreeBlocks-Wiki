@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 🎂 周年庆典
 
-TwoThreeBlocks 诞生于 2024-07-27，每年的 07-27 就是周年庆。
+TwoThreeBlocks 诞生于 **2024-07-27**，每年的 07-27 就是周年庆。
 
 > 本页中的图片都是无损压缩的哦。
 

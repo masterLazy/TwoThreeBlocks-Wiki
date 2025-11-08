@@ -18,15 +18,13 @@ import React, { Children } from 'react';
 import styles from './Img.module.css';
 
 interface Img {
-    src: string;
-    alt?: string;
     invertable?: boolean;
     height: string;
     children: React.ReactNode;
 }
 
 export default function Img({
-    src, alt, invertable = false, height = '23rem', children
+    invertable = false, height = '23rem', children
 }: Img) {
     const imgStyle = {
         '--mlazy-img-max-height': height,
