@@ -77,9 +77,30 @@ const config: Config = {
                     label: '指南',
                 },
                 {
-                    to: '/docs/category/地点列表',
-                    position: 'left',
+                    type: 'dropdown',
                     label: '地点列表',
+                    items: [
+                        {
+                            to: '/docs/place/spawnPoint',
+                            label: '出生点周边',
+                        },
+                        {
+                            to: '/docs/place/netherTraffic',
+                            label: '下界交通',
+                        },
+                        {
+                            to: '/docs/place/tinymachine',
+                            label: '🗃️ 小机器合集',
+                        },
+                        {
+                            to: '/docs/category/%EF%B8%8F-%E6%9C%BA%E5%99%A8',
+                            label: '🗃️ 机器',
+                        },
+                        {
+                            to: '/docs/category/-景点',
+                            label: '🌼 景点',
+                        }
+                    ],
                 },
                 {
                     to: '/docs/donate',
@@ -109,7 +130,7 @@ const config: Config = {
                         },
                         {
                             label: '地点列表',
-                            to: '/docs/category/地点列表'
+                            to: '/docs/category/-地点列表'
                         },
                         {
                             label: '赞助者名单',

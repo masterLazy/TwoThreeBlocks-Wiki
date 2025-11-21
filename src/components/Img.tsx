@@ -19,17 +19,20 @@ import styles from './Img.module.css';
 
 interface Img {
     invertable?: boolean;
+    noBorder?: boolean;
     height: string;
     children: React.ReactNode;
 }
 
 export default function Img({
-    invertable = false, height = '23rem', children
+    invertable = false, noBorder = false, height = '23rem', children
 }: Img) {
     const imgStyle = {
         '--mlazy-img-max-height': height,
         '--mlazy-img-dark-filter': invertable ?
-            'brightness(0.89) invert(1) hue-rotate(180deg)' : 'none',
+            'brightness(0.89) invert(1) hue-rotate(180deg)' : 'brightness(0.89)',
+        '--mlazy-img-border': noBorder ? 'none' : 'var(--ifm-color-emphasis-300) solid 1px',
+        '--mlazy-img-border-radius': noBorder ? '0' : 'var(--ifm-global-radius)',
     } as React.CSSProperties;
     const childrenArray = Children.toArray(children);
     return (

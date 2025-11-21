@@ -21,8 +21,8 @@
 }
 
 .imageWrapper {
-    border: var(--ifm-color-emphasis-300) solid 1px;
-    border-radius: var(--ifm-global-radius);
+    border: var(--mlazy-img-border);
+    border-radius: var(--mlazy-img-border-radius);
     margin: 0.5rem 0;
     overflow: hidden;
 }
