@@ -14,30 +14,10 @@
    limitations under the License.
  */
 
-.border {
-    padding: 2px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
-    background: linear-gradient(90deg,
-            #ff9aa2, #ffce9e, #ffff9e, #9effae, #9ed5ff, #d9b3ff, #ff9aff, #ff9aa2, #ffce9e);
-    background-size: 800% 100%;
-    animation: smoothFlow 6s linear infinite;
-}
-
-@keyframes smoothFlow {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
 .card {
+    margin: 1rem 0;
     border-radius: 8px;
+    border: var(--ifm-color-primary) solid 2px;
     overflow: hidden;
     background: var(--ifm-color-emphasis-100);
     padding: 0.6rem;

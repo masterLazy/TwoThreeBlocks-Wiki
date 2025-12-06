@@ -19,28 +19,26 @@ import styles from './Overview.module.css';
 
 export default function Overview() {
     return (
-        <div className={styles.border}>
-            <div className={styles.card}>
-                <div className={styles.line}>
-                    <span className={styles.title}>TwoThreeBlocks</span><span> 服务器</span>
-                </div>
-                <hr />
-                <div className={styles.line}>
-                    <span className={styles.title}>MC 版本</span>
-                    <span>1.21.4 Java Edition</span>
-                </div>
-                <div className={styles.line}>
-                    <span className={styles.title}>游戏模式</span>
-                    <span>生存</span>
-                </div>
-                <div className={styles.line}>
-                    <span className={styles.title}>需要的 mod</span>
-                    <span>无</span>
-                </div>
-                <div className={styles.line}>
-                    <span className={styles.title}>正版验证</span>
-                    <span>无，使用登录保护 mod</span>
-                </div>
+        <div className={styles.card}>
+            <div className={styles.line}>
+                <span className={styles.title}>TwoThreeBlocks</span><span> 服务器</span>
+            </div>
+            <hr />
+            <div className={styles.line}>
+                <span className={styles.title}>MC 版本</span>
+                <span>1.21.4 Java Edition</span>
+            </div>
+            <div className={styles.line}>
+                <span className={styles.title}>游戏模式</span>
+                <span>生存</span>
+            </div>
+            <div className={styles.line}>
+                <span className={styles.title}>需要的 mod</span>
+                <span>无</span>
+            </div>
+            <div className={styles.line}>
+                <span className={styles.title}>正版验证</span>
+                <span>无，使用登录保护 mod</span>
             </div>
         </div>
     );

@@ -148,7 +148,12 @@ li[role='tab'] {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 0.5rem 0;
     justify-content: center;
     align-items: center;
+    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.group .imgContainer {
+    margin: 0;
 }
