@@ -85,26 +85,29 @@ export default function Home() {
               <h3>#1</h3> 🐢 man
             </div>
             <div className={styles.sponsor}>
-              <h3>#2</h3> lemoncola_87
+              <h3>#2</h3> White_Amperi
             </div>
             <div className={styles.sponsor}>
-              <h3>#3</h3> msterLazy
+              <h3>#3</h3> lemoncola_87
             </div>
             <div className={styles.sponsor}>
-              <h3>#4</h3> asdmtxr
+              <h3>#4</h3> unbreaking_III
             </div>
             <div className={styles.sponsor}>
-              <h3>#4</h3> Redstone__Brain
+              <h3>#5</h3> msterLazy
             </div>
             <div className={styles.sponsor}>
-              <h3>#4</h3> underlined_
+              <h3>#6</h3> underlined_
             </div>
             <div className={styles.sponsor}>
-              <h3>#5</h3> sin_zri
+              <h3>#6</h3> Redstone__Brain
             </div>
             <div className={styles.sponsor}>
-              <h3>#5</h3> stickman_stickmi
+              <h3>#7</h3> asdmtxr
             </div>
+            <p style={{ fontSize: '95%' }}>
+              <i>最后于 <strong>2025年12月12日</strong> 更新</i>
+            </p>
           </div>
 
           <div className={styles.textContainer}>
@@ -112,7 +115,7 @@ export default function Home() {
               由衷感谢所有赞助者对 TwoThreeBlocks 的支持 ❤。
               此榜单不是完整的赞助者列表，你可以在这里查看所有的赞助者：
               <Link to='/docs/category/赞助者名单'>赞助者名单</Link>。
-              赞助榜和赞助者名单的更新不是实时的，请谅解。
+              赞助榜和赞助者名单不是实时更新的，请谅解。
             </p>
             <p>
               如果你想赞助我们，请查看：<Link to='/docs/donate'>赞助 TTB</Link>。

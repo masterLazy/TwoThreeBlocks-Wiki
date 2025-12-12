@@ -16,6 +16,10 @@ TTB 是一个完全免费的服务器，加入我们不需要收费。大部分�
 
 ## 赞助渠道
 
+:::tip
+转账时不要忘了备注您的称呼。
+:::
+
 <div className='group'>
     <Img>
         ![](./assets/alipay.webp)
