@@ -5,12 +5,22 @@
 
 .header {
   background: var(--ifm-footer-background-color);
+  background-image: url('/img/complex-colored.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
   padding-top: 3rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: all 0.6s;
+}
+
+.header:hover {
+
+  background-size: 155%;
 }
 
 .headerContainer {
@@ -70,6 +80,7 @@
 }
 
 .linkCard {
+  background: var(--ifm-footer-background-color);
   border-radius: var(--ifm-global-radius);
   padding: 1rem;
   transition: all 0.3s;

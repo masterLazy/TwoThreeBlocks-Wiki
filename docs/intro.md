@@ -13,17 +13,13 @@ import Overview from '@site/src/components/Overview'
 <Overview />
 
 <div className='group'>
-    <Img height='16rem' noBorder>
-        <ThemedImage
-        alt='TTB Logo'
-        sources={{
-            light: useBaseUrl('/img/logo-light.svg'),
-            dark: useBaseUrl('/img/logo-dark.svg'),
-        }}
-        />
+    <Img height='16rem' invertable noBorder>
+        ![](/img/logo.svg)
+
         **我们的 Logo**：2 和 3 组成的方块
     </Img>
 </div>
+
 
 TwoThreeBlocks 服务器 （TTB，二三方块） 成立于 2024 年 7 月 27 日，由“二三方块人交流会”的成员建立。
 
