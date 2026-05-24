@@ -27,6 +27,9 @@
 
     --ifm-color-primary-pale: #96ccff;
     --ifm-color-primary-paler: #cbe6ff;
+
+
+    --ifm-color-contrast: #948336;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

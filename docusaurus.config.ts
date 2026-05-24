@@ -61,8 +61,8 @@ const config: Config = {
             title: 'TwoThreeBlocks',
             logo: {
                 alt: 'TTB Logo',
-                src: 'img/logo-light.svg',
-                srcDark: 'img/logo-dark.svg',
+                src: 'img/logo.svg',
+                srcDark: 'img/logo-light.svg',
             },
             items: [
                 {
