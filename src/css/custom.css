@@ -30,6 +30,19 @@
 
 
     --ifm-color-contrast: #948336;
+
+    /* 沉浸页面 — 浅色模式（M3 Design 极淡蓝色调） */
+    --hero-bg-start: #dce8f5;
+    --hero-bg-mid: #c5d8ec;
+    --hero-bg-end: #aec8e3;
+    --hero-bg-glow: #7aa8d4;
+    --star-color: rgba(255, 255, 255, 0.01);
+    --star-color-dim: rgba(0, 0, 0, 0.02);
+    --star-color-warm: rgba(255, 255, 255, 0.01);
+    --hero-text-color: #1a2a4a;
+    --hero-text-muted: rgba(26, 42, 74, 0.75);
+    --hero-text-very-muted: rgba(26, 42, 74, 0.45);
+    --hero-page-bg: #f4f7fc;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -46,6 +59,53 @@
 
     --ifm-color-primary-pale: #2e5b85;
     --ifm-color-primary-paler: #20405d;
+
+    /* 沉浸页面 — 深色模式（深郁蓝调） */
+    --hero-bg-start: #020612;
+    --hero-bg-mid: #050f28;
+    --hero-bg-end: #0a183d;
+    --hero-bg-glow: #1a3d9a;
+    --star-color: rgba(255, 255, 255, 0.8);
+    --star-color-dim: rgba(255, 255, 255, 0.2);
+    --star-color-warm: rgba(200, 220, 255, 0.6);
+    --hero-text-color: #ffffff;
+    --hero-text-muted: rgba(255, 255, 255, 0.75);
+    --hero-text-very-muted: rgba(255, 255, 255, 0.4);
+    --hero-page-bg: #0f1422;
+}
+
+/*
+* 首页沉浸模式顶栏 — 毛玻璃效果
+*/
+.navbar--immersive {
+    background: color-mix(in srgb, var(--ifm-navbar-background-color) 65%, transparent) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: none !important;
+}
+
+/*
+* 沉浸模式 — 页面背景
+*/
+.page--immersive {
+    background-color: var(--hero-page-bg);
+}
+
+/* 同步 html 背景，防止深色模式 #1b1b1d 透出 */
+html:has(body.page--immersive) {
+    background-color: var(--hero-page-bg);
+}
+
+/*
+* 沉浸模式 — 底栏透明
+*/
+.page--immersive .theme-layout-footer {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.page--immersive .theme-layout-footer::before {
+    display: none !important;
 }
 
 /* 导航栏链接 */
@@ -162,8 +222,19 @@ li[role='tab'] {
 }
 
 .theme-layout-footer {
+    position: relative;
+    background: none;
+}
+
+.theme-layout-footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background-image: url('/img/complex-thin.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%);
+    pointer-events: none;
 }

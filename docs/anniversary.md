@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_hidden: true
 ---
 
 # 周年庆典

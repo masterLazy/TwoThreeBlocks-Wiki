@@ -1,0 +1,380 @@
+/*
+ * ── Keyframes ──
+ */
+
+@keyframes heroLogoIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkleSlow {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes shimmerBg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+ * ── Hero ──
+ */
+
+.hero {
+    position: relative;
+    z-index: 0;
+    margin-top: calc(-1 * var(--ifm-navbar-height));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: var(--hero-text-color);
+    padding-top: calc(var(--ifm-navbar-height) + 2rem);
+    padding-bottom: 2rem;
+}
+
+.heroBg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, var(--hero-bg-glow) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 20% 80%, var(--hero-bg-end) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 70%, var(--hero-bg-mid) 0%, transparent 50%),
+        linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-mid) 50%, var(--hero-bg-end) 100%);
+    background-size: 200% 200%;
+    animation: shimmerBg 12s ease infinite;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            transparent 35%,
+            var(--hero-bg-end) 65%,
+            var(--hero-page-bg) 90%);
+    pointer-events: none;
+}
+
+/* ── Stars (pure CSS) ── */
+
+.stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    box-shadow:
+        15px 20px 0 0 var(--star-color),
+        80px 120px 0 0 var(--star-color),
+        200px 60px 0 0 var(--star-color),
+        350px 180px 0 0 var(--star-color),
+        500px 90px 0 0 var(--star-color-warm),
+        650px 220px 0 0 var(--star-color),
+        800px 50px 0 0 var(--star-color-dim),
+        950px 160px 0 0 var(--star-color-warm),
+        1100px 100px 0 0 var(--star-color),
+        1250px 240px 0 0 var(--star-color-dim),
+        1400px 70px 0 0 var(--star-color),
+        1600px 200px 0 0 var(--star-color-warm),
+        180px 300px 0 0 var(--star-color-dim),
+        420px 400px 0 0 var(--star-color),
+        680px 350px 0 0 var(--star-color-warm),
+        900px 450px 0 0 var(--star-color-dim),
+        1150px 380px 0 0 var(--star-color),
+        1350px 500px 0 0 var(--star-color-warm),
+        400px 80px 0 0 var(--star-color-dim),
+        750px 140px 0 0 var(--star-color);
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.stars::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow:
+        40px 60px 0 0 var(--star-color-dim),
+        120px 200px 0 0 var(--star-color-dim),
+        300px 100px 0 0 var(--star-color-dim),
+        480px 300px 0 0 var(--star-color-dim),
+        600px 150px 0 0 var(--star-color-dim),
+        780px 50px 0 0 var(--star-color-dim),
+        1050px 280px 0 0 var(--star-color-dim),
+        1300px 130px 0 0 var(--star-color-dim),
+        1500px 180px 0 0 var(--star-color-dim),
+        300px 500px 0 0 var(--star-color-dim),
+        550px 420px 0 0 var(--star-color-dim),
+        1000px 550px 0 0 var(--star-color-dim),
+        1450px 400px 0 0 var(--star-color-dim);
+    animation: twinkleSlow 5s ease-in-out infinite;
+}
+
+.stars::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow:
+        60px 30px 0 0 var(--star-color-warm),
+        250px 140px 0 0 var(--star-color-warm),
+        450px 220px 0 0 var(--star-color-warm),
+        550px 40px 0 0 var(--star-color-warm),
+        850px 190px 0 0 var(--star-color-warm),
+        1200px 310px 0 0 var(--star-color-warm),
+        1380px 90px 0 0 var(--star-color-warm),
+        170px 480px 0 0 var(--star-color-warm),
+        700px 500px 0 0 var(--star-color-warm),
+        1100px 450px 0 0 var(--star-color-warm);
+    animation: twinkle 4s ease-in-out infinite 1s;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.heroTitle {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 10;
+    opacity: 0;
+    animation: heroLogoIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    text-align: left;
+}
+
+.heroSubtitle {
+    font-size: 1.15rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.4s;
+    color: var(--hero-text-muted);
+    letter-spacing: 0.05em;
+    max-width: 36rem;
+    line-height: 1.7;
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--hero-text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 1s;
+}
+
+.scrollArrow {
+    animation: float 2s ease-in-out infinite;
+}
+
+/*
+ * ── Fade-in utility ──
+ */
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fadeInVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*
+ * ── Year sections ──
+ */
+
+.yearSection {
+    padding: 3rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionInner {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.yearTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.separator {
+    color: var(--ifm-color-emphasis-500);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 80%;
+    vertical-align: auto;
+}
+
+.yearDivider {
+    width: 4rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--ifm-color-primary);
+    margin: 2rem auto 2rem;
+    opacity: 0.5;
+}
+
+/*
+ * ── Photo grid ──
+ */
+
+.photoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 640px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.photoCard {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.photoCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.75rem;
+    transition: transform 0.4s ease;
+}
+
+.photoCard:hover img {
+    transform: scale(1.03);
+}
+
+
+/*
+ * ── Attendees ──
+ */
+
+.attendeesSection {
+    text-align: center;
+}
+
+.attendeesTitle {
+    font-size: 1rem;
+    color: var(--ifm-color-emphasis-600);
+    margin-bottom: 1rem;
+}
+
+.attendeesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.attendeePill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ifm-color-emphasis-700);
+    background: var(--ifm-background-surface-color);
+    border: 1px solid var(--ifm-color-emphasis-200);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.attendeePill:hover {
+    background: var(--ifm-color-primary-paler);
+    border-color: var(--ifm-color-primary-pale);
+    color: var(--ifm-color-primary-dark);
+}
+
+.attendeePill::before {
+    content: '👤';
+    font-size: 0.75rem;
+    opacity: 0.6;
+}

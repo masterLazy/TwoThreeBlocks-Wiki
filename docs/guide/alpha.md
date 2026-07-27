@@ -35,7 +35,7 @@ TTB 欢迎所有热爱 Minecraft（或者想要体验 Minecraft）的校友加�
 - 在 `多人游戏>添加服务器` 中输入 TTB 的地址，并连接至服务器。
 
 	```text title="服务器地址"
-	ttbl.ocks.top:21167
+	ttbl.ocks.top:20999
 	```
 
 	:::tip

@@ -103,6 +103,11 @@ const config: Config = {
                     ],
                 },
                 {
+                    to: '/anniversary',
+                    position: 'left',
+                    label: '🎉 周年庆典',
+                },
+                {
                     to: '/docs/donate',
                     position: 'left',
                     label: '🤝 赞助我们',
