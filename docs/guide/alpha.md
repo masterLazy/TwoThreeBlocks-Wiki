@@ -78,7 +78,7 @@ TTB 欢迎所有热爱 Minecraft（或者想要体验 Minecraft）的校友加�
 
 你可能会注意到，服务器中的游戏机制似乎与原版 Minecraft 有些差异。
 
-关于这些差异的解释，请看：[有哪些游戏行为被改变了？](http://localhost:3000/docs/guide/whatsspecial)。
+关于这些差异的解释，请看：[有哪些游戏行为被改变了？](/docs/guide/whatsspecial)。
 
 :::
 
