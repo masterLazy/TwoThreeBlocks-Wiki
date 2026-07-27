@@ -504,8 +504,8 @@
   overflow: hidden;
   mask-image: linear-gradient(to right,
       transparent 0%,
-      black 3%,
-      black 97%,
+      black 10%,
+      black 90%,
       transparent 100%);
 }
 
@@ -575,8 +575,8 @@
 
 .updateNote {
   text-align: center;
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-500);
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
   margin-top: -1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -585,10 +585,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.75rem;
-  width: 100%;
   max-width: 54rem;
   margin: 0 auto;
-  padding: 0 1rem;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -630,6 +628,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
@@ -646,23 +645,14 @@
   font-weight: 500;
 }
 
-.updateNote {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-600);
-}
-
 .sponsorFooter {
   max-width: 54rem;
   margin: 1rem auto 0;
-  padding: 0 1rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--ifm-color-emphasis-700);
-
-  @media (max-width: 600px) {
-    padding: 0 0.5rem;
-  }
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /*
@@ -679,8 +669,8 @@
   max-width: 54rem;
   margin: 1.5rem auto 0;
   padding: 0 1rem;
-  font-size: 0.9rem;
-  color: var(--ifm-color-emphasis-600);
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
 
   @media (max-width: 600px) {
     padding: 0 0.5rem;

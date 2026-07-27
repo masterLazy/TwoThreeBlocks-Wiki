@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
+import { intToChinese } from '@site/src/utils/intToChinese';
 
 import styles from './AnniversaryModal.module.css';
 
@@ -17,8 +18,8 @@ export default function AnniversaryModal() {
 
     if (!show) return null;
 
-    const years = new Date().getFullYear() - 2024;
-    const yearLabel = years === 1 ? '一周年' : `${years} 周年`;
+    const nth = new Date().getFullYear() - 2024;
+    const yearLabel = intToChinese(nth) + '周年生日';
 
     return (
         <div className={styles.banner}>

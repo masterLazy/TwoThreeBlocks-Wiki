@@ -6,27 +6,17 @@ import ThemedImage from '@theme/ThemedImage';
 import Heading from '@theme/Heading';
 
 import AnniversaryModal from '@site/src/components/AnniversaryModal';
+import { sponsors, sponsorUpdateDate } from '@site/src/data/sponsors';
 
 import styles from './index.module.css';
 
 const photos = [
-  { src: require('@site/src/assets/anniversary/2025-3.webp').default, title: '✨ 一周年庆合照（2025）' },
-  { src: require('@site/src/assets/sky.webp').default, title: '出生点的天空' },
+  { src: require('@site/src/assets/pixelart.webp').default, title: '（前）地图画' },
   { src: require('@site/src/assets/校友亭.webp').default, title: '校友亭' },
-  { src: require('@site/src/assets/coast.webp').default, title: '信标 · 水岸 · 樱花' },
-  { src: require('@site/src/assets/anniversary/2025-1.webp').default, title: '🎉 周年庆合影' },
-  { src: require('@site/src/assets/anniversary/2025-2.webp').default, title: '🎂 周年庆留念' },
-];
-
-const sponsors = [
-  { rank: 1, name: '🐢 man' },
-  { rank: 2, name: 'White_Amperi' },
-  { rank: 3, name: 'lemoncola_87' },
-  { rank: 4, name: 'unbreaking_III' },
-  { rank: 5, name: 'msterLazy' },
-  { rank: 6, name: 'underlined_' },
-  { rank: 6, name: 'Redstone__Brain' },
-  { rank: 7, name: 'asdmtxr' },
+  { src: require('@site/src/assets/anniversary/2025-3.webp').default, title: '一周年庆合照（2025）' },
+  { src: require('@site/src/assets/anniversary/2026-3.webp').default, title: '二周年庆合照（2026）' },
+  { src: require('@site/src/assets/coast.webp').default, title: '樱花一角' },
+  { src: require('@site/src/assets/what.webp').default, title: '？？？' },
 ];
 
 // ── Intersection Observer hook ──
@@ -236,7 +226,7 @@ export default function Home() {
                 </div>
                 <h3 className={styles.featureTitle}>免费畅玩</h3>
                 <p className={styles.featureDesc}>
-                  无需购买正版，零门槛免费加入。完全公益服务器，费用由捐赠者和腐竹承担。
+                  无需购买正版，零门槛免费加入。完全公益服务器，费用由赞助者和腐竹承担。
                 </p>
               </div>
               <div className={styles.featureCard}>
@@ -280,9 +270,9 @@ export default function Home() {
                     <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
                   </svg>
                 </div>
-                <h3 className={styles.featureTitle}>公共设施完善</h3>
+                <h3 className={styles.featureTitle}>基础设施完善</h3>
                 <p className={styles.featureDesc}>
-                  出生点周边齐全工业体系：刷铁塔、交易所、高速熔炉、全物品仓库等。
+                  出生点周边齐全工业体系：刷铁塔、交易所、高速熔炉、全物品仓库（在建）等。
                 </p>
               </div>
               <div className={styles.featureCard}>
@@ -292,7 +282,7 @@ export default function Home() {
                     <circle cx="12" cy="7" r="4" />
                   </svg>
                 </div>
-                <h3 className={styles.featureTitle}>完善皮肤支持</h3>
+                <h3 className={styles.featureTitle}>皮肤完备支持</h3>
                 <p className={styles.featureDesc}>
                   正版离线玩家均可自由更换皮肤，支持多种皮肤来源。
                 </p>
@@ -318,40 +308,38 @@ export default function Home() {
         {/* ═══════════════ SPONSORS ═══════════════ */}
         <section className={styles.sponsorSection}>
           <FadeInSection>
-            <Heading as="h2" className={styles.sectionTitle}>
-              <strong>赞助榜</strong>
-              <span className={styles.separator}>｜</span>
-              Sponsors
-            </Heading>
-            <p className={styles.updateNote}>
-              <i>最后于 <strong>2025年12月12日</strong> 更新</i>
-            </p>
-          </FadeInSection>
-          <FadeInSection delay={150}>
-            <div className={styles.sponsorList}>
-              {sponsors.map((s, i) => (
-                <div
-                  key={i}
-                  className={styles.sponsorItem}
-                  style={{ animationDelay: `${i * 0.06}s` }}
-                >
-                  <span className={styles.sponsorRank}>{s.rank}</span>
-                  <span className={styles.sponsorName}>{s.name}</span>
-                </div>
-              ))}
-            </div>
-          </FadeInSection>
-          <FadeInSection delay={300}>
-            <div className={styles.sponsorFooter}>
-              <p>
-                由衷感谢所有赞助者对 TwoThreeBlocks 的支持 ❤。
-                此榜单不是完整的赞助者列表，你可以在这里查看所有的赞助者：
-                <Link to="/docs/category/赞助者名单"> 赞助者名单</Link>。
-                赞助榜和赞助者名单不是实时更新的，请谅解。
+            <div className={styles.sectionInner}>
+              <Heading as="h2" className={styles.sectionTitle}>
+                <strong>赞助榜</strong>
+                <span className={styles.separator}>｜</span>
+                Sponsors
+              </Heading>
+              <p className={styles.updateNote}>
+                最后于{sponsorUpdateDate}更新
               </p>
-              <p>
-                如果你想赞助我们，请查看：<Link to="/docs/donate">赞助 TTB</Link>。
-              </p>
+              <div className={styles.sponsorList}>
+                {sponsors.map((s, i) => (
+                  <div
+                    key={i}
+                    className={styles.sponsorItem}
+                    style={{ animationDelay: `${i * 0.06}s` }}
+                  >
+                    <span className={styles.sponsorRank}>{s.rank}</span>
+                    <span className={styles.sponsorName}>{s.name}</span>
+                  </div>
+                ))}
+              </div>
+              <div className={styles.sponsorFooter}>
+                <p>
+                  由衷感谢所有赞助者对 TwoThreeBlocks 的支持 ❤。
+                  此榜单不是完整的赞助者列表，你可以在这里查看所有的赞助者：
+                  <Link to="/docs/category/赞助者名单"> 赞助者名单</Link>。
+                  赞助榜和赞助者名单不是实时更新的，请谅解。
+                </p>
+                <p>
+                  如果你想赞助我们，请查看：<Link to="/docs/donate">赞助 TTB</Link>。
+                </p>
+              </div>
             </div>
           </FadeInSection>
         </section>

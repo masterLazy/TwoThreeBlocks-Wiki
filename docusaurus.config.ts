@@ -105,12 +105,12 @@ const config: Config = {
                 {
                     to: '/anniversary',
                     position: 'left',
-                    label: '🎉 周年庆典',
+                    label: '周年庆典',
                 },
                 {
                     to: '/docs/donate',
                     position: 'left',
-                    label: '🤝 赞助我们',
+                    label: '赞助我们',
                 },
                 {
                     href: 'https://github.com/masterLazy/TwoThreeBlocks-Wiki',

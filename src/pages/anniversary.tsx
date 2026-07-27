@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import { anniversaryYears } from '@site/src/data/anniversary';
+import { intToChinese } from '@site/src/utils/intToChinese';
 
 import styles from './anniversary.module.css';
 
@@ -38,6 +39,57 @@ function FadeInSection({ children, delay = 0 }: { children: React.ReactNode; del
             style={{ transitionDelay: `${delay}ms` }}
         >
             {children}
+        </div>
+    );
+}
+
+// ── Photo carousel (slide track, fixed container) ──
+function PhotoCarousel({ photos }: { photos: { src: string }[] }) {
+    const [current, setCurrent] = useState(0);
+
+    if (photos.length === 0) return null;
+
+    const prev = () => setCurrent((c) => (c === 0 ? photos.length - 1 : c - 1));
+    const next = () => setCurrent((c) => (c === photos.length - 1 ? 0 : c + 1));
+
+    return (
+        <div className={styles.carousel}>
+            <div className={styles.carouselViewport}>
+                <div
+                    className={styles.carouselTrack}
+                    style={{ transform: `translateX(-${current * 100}%)` }}
+                >
+                    {photos.map((photo, i) => (
+                        <img key={i} src={photo.src} alt="" draggable={false} />
+                    ))}
+                </div>
+                {photos.length > 1 && (
+                    <>
+                        <button className={styles.carouselBtnLeft} onClick={prev} aria-label="上一张">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button className={styles.carouselBtnRight} onClick={next} aria-label="下一张">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </>
+                )}
+            </div>
+            {photos.length > 1 && (
+                <div className={styles.carouselDots}>
+                    {photos.map((_, i) => (
+                        <button
+                            key={i}
+                            className={`${styles.carouselDot} ${i === current ? styles.carouselDotActive : ''}`}
+                            onClick={() => setCurrent(i)}
+                            aria-label={`第 ${i + 1} 张照片`}
+                        />
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
@@ -87,20 +139,14 @@ export default function Anniversary() {
                         <FadeInSection>
                             <div className={styles.sectionInner}>
                                 <h2 className={styles.yearTitle}>
-                                    🎂 {yearData.label}
+                                    🎂 {intToChinese(yearData.year - 2024)}周年
                                     <span className={styles.separator}>｜</span>
-                                    {yearData.year}
+                                    {yearData.year}.7.27
                                 </h2>
                                 <div className={styles.yearDivider} />
 
                                 {/* Photos */}
-                                <div className={styles.photoGrid}>
-                                    {yearData.photos.map((photo, i) => (
-                                        <div key={i} className={styles.photoCard}>
-                                            <img src={photo.src} alt={`${yearData.label} - ${yearData.year}`} draggable={false} />
-                                        </div>
-                                    ))}
-                                </div>
+                                <PhotoCarousel photos={yearData.photos} />
 
                                 {/* Attendees */}
                                 <div className={styles.attendeesSection}>
@@ -124,8 +170,8 @@ export default function Anniversary() {
                 <FadeInSection>
                     <section className={styles.yearSection} style={{ paddingTop: 0 }}>
                         <div className={styles.sectionInner}>
-                            <p style={{ textAlign: 'center', color: 'var(--ifm-color-emphasis-500)', fontSize: '0.9rem' }}>
-                                新的周年庆照片和人员名单将在这里不断更新……
+                            <p style={{ textAlign: 'center', color: 'var(--ifm-color-emphasis-700)', fontSize: '0.95rem' }}>
+                                新的周年庆典不断续写中……
                             </p>
                         </div>
                     </section>
