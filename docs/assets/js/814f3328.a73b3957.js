@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkttb_wiki=self.webpackChunkttb_wiki||[]).push([["1833"],{5513(t){t.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
