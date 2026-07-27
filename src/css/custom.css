@@ -36,9 +36,9 @@
     --hero-bg-mid: #c5d8ec;
     --hero-bg-end: #aec8e3;
     --hero-bg-glow: #7aa8d4;
-    --star-color: rgba(255, 255, 255, 0.01);
-    --star-color-dim: rgba(0, 0, 0, 0.02);
-    --star-color-warm: rgba(255, 255, 255, 0.01);
+    --star-color: rgba(0, 0, 0, 0.18);
+    --star-color-dim: rgba(0, 0, 0, 0.08);
+    --star-color-warm: rgba(180, 140, 60, 0.14);
     --hero-text-color: #1a2a4a;
     --hero-text-muted: rgba(26, 42, 74, 0.75);
     --hero-text-very-muted: rgba(26, 42, 74, 0.45);

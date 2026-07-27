@@ -5,6 +5,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
 import Heading from '@theme/Heading';
 
+import AnniversaryModal from '@site/src/components/AnniversaryModal';
+
 import styles from './index.module.css';
 
 const photos = [
@@ -89,22 +91,25 @@ function AnimatedCounter({ end, suffix = '' }: { end: number; suffix?: string })
 
   useEffect(() => {
     if (!isVisible) return;
-    let start = 0;
-    const duration = 1500;
-    const step = 16;
-    const totalSteps = duration / step;
-    const increment = end / totalSteps;
 
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
+    const halfLife = 200; // 200ms 到 50%, 400ms 到 75%, 600ms 到 87.5% ...
+    const startTime = performance.now();
+    let rafId: number;
+
+    function animate(now: number) {
+      const elapsed = now - startTime;
+      // 指数衰减：1 - 2^(-t/halfLife)
+      const progress = 1 - Math.pow(2, -elapsed / halfLife);
+      const current = Math.round(end * progress);
+      setCount(Math.min(current, end));
+
+      if (current < end) {
+        rafId = requestAnimationFrame(animate);
       }
-    }, step);
-    return () => clearInterval(timer);
+    }
+
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, [isVisible, end]);
 
   return (
@@ -128,7 +133,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout description="TwoThreeBlocks 二三方块服务器官方 Wiki — 一个公益的 Minecraft Java Edition 服务器">
+    <Layout description="TwoThreeBlocks 二三方块服务器官方 Wiki">
       <main>
         {/* ═══════════════ HERO ═══════════════ */}
         <section className={styles.hero}>
@@ -147,6 +152,7 @@ export default function Home() {
             <p className={styles.heroSubtitle}>
               TwoThreeBlocks · 二三方块服务器官方 Wiki
             </p>
+            <AnniversaryModal />
             <div className={styles.heroCta}>
               <Link to={useBaseUrl('/docs/guide/alpha')} className={styles.ctaPrimary}>
                 立即加入服务器
@@ -200,8 +206,8 @@ export default function Home() {
                 <span className={styles.statLabel}>白名单成员</span>
               </div>
               <div className={styles.statCard}>
-                <span className={styles.statNumber}><AnimatedCounter end={7} suffix=" 天" /></span>
-                <span className={styles.statLabel}>不间断运行</span>
+                <span className={styles.statNumber}><AnimatedCounter end={365} suffix=" 天" /></span>
+                <span className={styles.statLabel}>全年不间断运行</span>
               </div>
             </div>
           </FadeInSection>
@@ -288,7 +294,7 @@ export default function Home() {
                 </div>
                 <h3 className={styles.featureTitle}>完善皮肤支持</h3>
                 <p className={styles.featureDesc}>
-                  正版离线玩家均可自由更换皮肤，支持 Steve 与 Alex 双模型。
+                  正版离线玩家均可自由更换皮肤，支持多种皮肤来源。
                 </p>
               </div>
             </div>
