@@ -12,7 +12,7 @@ for /f %%i in ('git rev-parse HEAD') do set "mainLastCommit=%%i"
 call git add . || goto :error
 call git commit -m "%message%" || goto :error
 call git push --force-with-lease || goto :rollbackMain
-echo Pushed main to branch 'main'.
+echo Pushed branch 'main'.
 
 echo.
 echo * Task: Build Docusaurus
@@ -30,21 +30,25 @@ echo Copied build result.
 cd "%buildPath%"
 
 echo.
-echo * Task: Push branch 'build'
+echo * Task: Copy CNAME
+copy "CNAME" "docs/"
+
+echo.
+echo * Task: Push branch 'github-pages'
 for /f %%i in ('git rev-parse HEAD') do set "buildLastCommit=%%i"
 call git add . || goto :rollbackMain
 call git commit -m "%message%" || goto :rollbackMain
 call git push --force-with-lease || goto :rollbackBoth
-echo Pushed build to branch 'build'.
+echo Pushed branch 'github-pages'.
 
 goto :success
 
 :rollbackBoth
 echo.
-echo * Compensate: Reset commit on branch 'build'
+echo * Compensate: Reset commit on branch 'github-pages'
 cd "%buildPath%"
 call git reset --soft %buildLastCommit% || goto :rollbackMain
-echo Reset build to %buildLastCommit%.
+echo Reset github-pages to %buildLastCommit%.
 
 :rollbackMain
 echo.
