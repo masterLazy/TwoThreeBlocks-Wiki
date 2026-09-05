@@ -123,7 +123,7 @@ const config: Config = {
             style: 'light',
             links: [
                 {
-                    title: '文档',
+                    title: 'TwoThreeBlocks',
                     items: [
                         {
                             label: '概述',
@@ -178,7 +178,7 @@ const config: Config = {
                     ],
                 }
             ],
-            copyright: `© ${new Date().getFullYear()} TwoThreeBlocks · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
+            copyright: `© 2024–${new Date().getFullYear()} TwoThreeBlocks · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
         },
         prism: {
             theme: prismThemes.github,

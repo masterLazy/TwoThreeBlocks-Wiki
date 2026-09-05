@@ -25,6 +25,8 @@
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+    --ifm-background-color: #f4f6fa;
+
     --ifm-color-primary-pale: #96ccff;
     --ifm-color-primary-paler: #cbe6ff;
 
@@ -56,6 +58,8 @@
     --ifm-color-primary-lightest: #cbe6ff;
     --ifm-color-secondary: #313131;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-background-color: #1e2027;
 
     --ifm-color-primary-pale: #2e5b85;
     --ifm-color-primary-paler: #20405d;
@@ -166,6 +170,15 @@ a[rel='tag'] span {
     color: var(--ifm-font-color-base);
 }
 
+/* 页脚 */
+.footer__copyright {
+    color: var(--ifm-color-emphasis-700);
+
+    @media(max-width: 997px) {
+        font-size: smaller;
+    }
+}
+
 /*
 * 小组件
 */
@@ -198,8 +211,31 @@ li[role='tab'] {
 }
 
 /* Markdown */
+.markdown {
+    --ifm-h3-vertical-rhythm-top: 1;
+    max-width: 860px;
+
+    @media(min-width: 930px) {
+        padding-left: 3rem;
+    }
+}
+
+.markdown h1 {
+    margin-top: 3rem;
+}
+
 .markdown>h2 {
-    border-bottom: var(--ifm-color-emphasis-500) solid 1px;
+    border-bottom: var(--ifm-color-emphasis-300) solid 2px;
+}
+
+.markdown>hr {
+    background-color: var(--ifm-color-emphasis-300);
+    height: 2px;
+}
+
+.markdown>blockquote {
+    border-left-width: 4px;
+    color: var(--ifm-color-emphasis-700);
 }
 
 /*

@@ -237,7 +237,7 @@ export default function Home() {
                 </div>
                 <h3 className={styles.featureTitle}>自研登录系统</h3>
                 <p className={styles.featureDesc}>
-                  LazyLogin 保障账户安全，密码哈希存储，管理员也无法获取你的密码。
+                  Satellite mod 保障账户安全，密码哈希存储，管理员也无法获取你的密码。
                 </p>
               </div>
               <div className={styles.featureCard}>

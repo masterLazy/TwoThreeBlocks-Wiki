@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
 import { anniversaryYears } from '@site/src/data/anniversary';
 import { intToChinese } from '@site/src/utils/intToChinese';
 
@@ -116,7 +115,7 @@ export default function Anniversary() {
                     <div className={styles.heroBg} />
                     <div className={styles.heroOverlay} />
                     <div className={styles.heroContent}>
-                        <h1 className={styles.heroTitle}>今年是<br />TwoThreeBlocks 成立第 {new Date().getFullYear() - 2024} 年</h1>
+                        <h1 className={styles.heroTitle}>今年是<br />TwoThreeBlocks 成立第 {new Date().getFullYear() - 2023} 年</h1>
                         <p className={styles.heroSubtitle}>
                             TwoThreeBlocks 诞生于 <strong>2024.07.27</strong>
                             <br />

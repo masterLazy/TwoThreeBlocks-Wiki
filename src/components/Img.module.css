@@ -21,6 +21,11 @@
     margin-bottom: 1rem;
 }
 
+.imageContainer p {
+    font-size: 15px;
+    margin: 0;
+}
+
 .imageWrapper {
     border: var(--mlazy-img-border);
     border-radius: var(--mlazy-img-border-radius);
@@ -34,10 +39,6 @@
     max-height: var(--mlazy-img-max-height);
     /* Don't use auto here */
     width: 100%;
-    margin: 0;
-}
-
-.imageWrapper p {
     margin: 0;
 }
 

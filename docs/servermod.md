@@ -19,7 +19,7 @@ sidebar_position: 6
 
 以下 mod 用于登录系统，主条目：[登录 / 注册系统](/docs/guide/login)
 
-- [LazyLogin](https://github.com/masterLazy/LazyLogin)
+- [Satellite](https://github.com/masterLazy/Satellite)
 
 以下 mod 用于提供皮肤显示，主条目：[设置皮肤](/docs/guide/skin)
 

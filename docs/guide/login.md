@@ -4,9 +4,11 @@ sidebar_position: 5
 
 # 登录 / 注册系统
 
-LazyLogin 是服务器使用的登录兼白名单修复 mod：https://www.mcmod.cn/class/16519.html。
+:::note
+此文档 work in place.
+:::
 
-你**不需**在客户端安装它就可以正常使用功能。
+Satellite 是服务器使用的登录兼白名单修复 mod。
 
 ## 功能简介
 
@@ -15,16 +17,13 @@ LazyLogin 是服务器使用的登录兼白名单修复 mod：https://www.mcmod.
 
 此外：
 
-- 增加 `/whitelist safe-add` 指令，进一步保护服务器安全。
-- 服务器根据玩家的用户名，把密码的哈希值记录在服务器中。（`registered-players.json`）
+- 服务器根据玩家的用户名，把密码的哈希值记录在服务器中。
 
 :::info
 
 我们不会直接记录你的密码，而是记录密码的哈希值。所以即使是服务器管理员也无法获取你的密码。
 
 :::
-
-- 可以通过修改 `.jar` 内 `/assets/lazylogin/lang.json` 自定义文本，或者翻译成其他语言 。
 
 功能细节见下节介绍。
 
@@ -73,13 +72,7 @@ LazyLogin 是服务器使用的登录兼白名单修复 mod：https://www.mcmod.
 
 ```text title="注册并加入白名单"
 // highlight-next-line
-/whitelist safe-add <玩家>
+/whitelist add <玩家>
 例如:
-/whitelist safe-add Dream
+/whitelist add Dream
 ```
-
-:::tip
-
-请服务器管理员优先考虑使用 `/whitelist safa-add` 添加白名单，以提供更好的服务器安全保障。
-
-:::
